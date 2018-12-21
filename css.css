@@ -1,0 +1,3214 @@
+/* General
+---------- */
+*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+
+body > .content {
+    margin: 0 340px 0 10px;
+    background: #F6F6F6;
+}
+
+body {
+    background: #EEE;
+    font-family: Arial, sans-serif;
+}
+
+.tagline a:hover, .search-result-meta a:hover, .hover a:hover, .icon-menu a {
+    text-decoration: none;
+    background: none;
+}
+
+.modtools-page > div.content {
+    margin: 105px 340px 0 10px;
+}
+
+.expando-button {
+    height: 16px!important;
+    width: 16px!important;
+    margin: 2px 5px 2px 0;
+    border: 1px solid #e9e9e9;
+    border-radius: 1px;
+    background-image: url(%%hsb%%)!important;
+    background-position: 0px -222px!important;
+}
+
+.expando-button:hover {
+    background-color: #006A4E;
+    background-position: -16px -222px!important;
+    border-radius: 2px;
+}
+
+.expando-button.expanded { background-position: -32px -222px!important; }
+.expando-button.collapsed.video { background-position: -64px -222px!important; }
+.expando-button.image.collapsed { background-position: -32px -238px!important; }
+.expando-button.twitter.collapsed { background-position: -97px -222px!important; }
+.expando-button.expanded:hover { background-position: -48px -222px!important; }
+.expando-button.collapsed.video:hover { background-position: -80px -222px!important; }
+.expando-button.image.collapsed:hover { background-position: -48px -238px!important; }
+.expando-button.twitter.collapsed:hover { background-position: -113px -222px!important; }
+
+.listing-page .link .expando-button {
+    margin-top: 7px;
+}
+
+/* RES General Fixes */
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .RES-keyNav-activeElement .md-container, 
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res-nightmode .res .RES-keyNav-activeElement,
+.res-nightmode .res .commentarea .RES-keyNav-activeElement .md,
+.res-nightmode .res .RES-keyNav-activeElement .md-container, 
+.res-nightmode .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+.entry.res-selected, .entry.res-selected .md-container,
+.thing .entry.res-selected, 
+.thing .entry.res-selected .md-container {
+    background: transparent!important;
+    background-color: transparent!important;
+}
+
+.res-nightmode span.fancy-toggle-button.subscribe-button.toggle a {
+   color: white!important; 
+}
+
+.res-show-link {
+    width: calc(100% - 350px);
+    box-shadow: none;
+    left: 10px;
+}
+
+/* Header */
+#header {
+    height: 200px;
+    border: none;
+    background-color: #016f4a;
+    background-image: url(%%headerimg%%);
+	background-repeat: no-repeat;
+	background-position: left 75%;
+    background-size: initial;
+    z-index: auto;
+}
+
+#header .pagename {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin-top: -200px;
+    margin-left: 72px;
+    z-index: 1;
+}
+
+#header .pagename a {
+    z-index: -1;
+    height: 196px;
+    width: 255px;
+    background: url(%%hsb%%) no-repeat 0 0;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    float: left;
+    transition: all 200ms ease;
+}
+
+#header .pagename a:after {
+	content: "";
+    display: block;
+    height: 196px;
+    width: 255px;
+    background: url(%%hsb%%) no-repeat 0 0;
+	background-position: -255px 0;
+    background-repeat: no-repeat;
+    transition: all 200ms ease;
+    opacity: 0;
+    float: left;
+}
+
+#header .pagename a:hover:after {
+	opacity: 1;
+}
+
+/* Sub Bar */
+#sr-header-area a, .srSep, .res #sr-header-area a.RESShortcutsCurrentSub, .sr-bar .separator {
+    color: rgba(255, 255, 255, 0.2)!important;
+    transition: color 300ms ease;
+}
+
+#sr-header-area:hover a, #sr-header-area:hover .srSep, #sr-header-area:hover .sr-bar .separator {
+    color: rgba(255, 255, 255, 0.8)!important;
+    transition: color 300ms ease;
+}
+
+#sr-header-area a:hover, .res #sr-header-area:hover a.RESShortcutsCurrentSub {
+    color: white!important;
+    transition: color 300ms ease;
+}
+
+#sr-header-area, .res-nightmode #sr-header-area {
+    height: 25px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    line-height: 25px;
+}
+
+#sr-header-area { position: relative; z-index: 2; }
+
+/* Nav Bar */
+#header-bottom-left {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 35px;
+    background: #FFFFFF;
+}
+
+#header-bottom-left ul {
+    position: absolute;
+    height: 35px;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+#header-bottom-left ul li {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+#header-bottom-left ul li a {
+    display: block;
+    height: 35px;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #858585;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+#header-bottom-left ul li.selected a, #header-bottom-left ul:hover li.selected a, #header-bottom-left ul li.selected a:hover {
+    color: #A7A8AC;
+    border: none;
+}
+
+#header-bottom-left ul:hover > li a {
+    color: #C5C5C5;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+#header-bottom-left ul li a:hover {
+    color: #006A4E;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+/* User Bar */
+#header-bottom-right {
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    padding-right: 4px;
+    border-radius: 0;
+    top: 200px!important;
+    background: white;
+}
+
+#header-bottom-right a {
+    color: #006A4E;
+    line-height: 35px;
+}
+
+#header-bottom-right > #userbarToggle {
+    border: 0;
+    border-radius: 0;
+    line-height: 35px;
+    padding-right: 4px;
+    background: #EAEAEA;
+    color: #006A4E;
+}
+
+#mail.nohavemail, #NREMail.nohavemail
+{
+	background-image:url(%%s%%)!important;
+	background-position:0 0!important
+}
+
+#mail.havemail, #NREMail.havemail
+{
+	background-image:url(%%s%%)!important;
+	background-position: 0 -12px!important
+}
+
+#modmail {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 23px;
+    height: 11px;
+    margin-bottom: -6px;
+}
+
+#modmail.nohavemail {
+    background-image:url(%%s%%)!important;
+	background-position:-16px 0!important
+}
+
+#modmail.havemail {
+    background-image:url(%%s%%)!important;
+	background-position:-16px -12px!important
+}
+
+.message-count {
+    background-color: #E2E2E2;
+    color: #D12020!important;
+    line-height: 15px!important;
+}
+
+.RESDropdownList {top: 201px !important;right: 0 !important;background: #fcfcfc;border-radius: 0;border: 1px solid #ddd;}
+
+.RESDropdownList li, .RESDropdownList a, .drop-choices a {border: none;color: #6f6e69;text-transform: uppercase;font-family: sans-serif;transition: 200ms;}
+.RESDropdownList li:hover {border-left: 5px solid #5EB58F;background: #f4f4f4;color: #000;}
+.RESDropdownList li a {width: 100% !important;}
+.RESDropdownList li a:hover {background: #f4f4f4;color: #000;}
+
+.dropdown.srdrop .selected {
+    margin: 0 9px 0 5px;
+    padding: 0;
+}
+
+#sr-header-area #srDropdownContainer a, .dropdown.srdrop .selected {
+    display: block;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #0d724d url(%%hsb%%) no-repeat -16px -222px;
+    text-indent: -9999px;
+}
+
+#sr-header-area .drop-choices.srdrop, #srList {
+    left: 5px!important;
+    height: 180px!important;
+    overflow-y: scroll;
+}
+
+#srList {
+    top: 20px!important;
+}
+
+#sr-header-area .drop-choices.srdrop a {
+    color: #0d724d!important;
+}
+
+.RESHover, .RESHover.RESDialogSmall {
+    position: absolute!important;
+    margin-top: 34px!important;
+}
+
+/* Flair */
+.flair {
+    position: relative;
+    font-size: 11px!important;
+    margin: 0 -3px 0 36px;
+    padding: 0;
+    width: 0;
+    max-width: 30px;
+    background: transparent;
+    border: 1px solid transparent;
+    line-height: 20px;
+    text-indent: -9999px
+}
+
+.flair:hover {
+    max-width: inherit;
+    margin: 0 4px 0 36px;
+    padding: 0 5px;
+    width: auto;
+    border: 1px solid #E6E6E6;
+    text-indent: 0;
+    border-radius: 3px;
+    background: white;
+}
+
+.flair:before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -36px;
+	float: left;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(%%f%%) no-repeat 0 0;
+}
+
+/*.comment .md a[href^="#"] {
+    content: "";
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(%%f%%) no-repeat 0 0;
+    pointer-events: none;
+    font-size: 0;
+    vertical-align: middle;
+}*/
+
+.link .flair:hover, .link .flair {
+    margin-top: 0;
+}
+
+/* Search */
+
+body:not(.search-page) #search {
+    background: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    margin: 0;
+    position: absolute;
+    top: 240px;
+}
+
+#search input[type=text] {
+    border: 1px solid #e2e2e2;
+    font-size: 15px;
+    width: 321px;
+    margin: 5px -1px;
+    font-size: 12px;
+}
+
+#search input[type=text]:focus {outline: none;}
+
+.infobar {
+    background: #f1f1f1;
+    border: 1px solid #d5d5d5;
+}
+
+.ace_searchbtn.next, .ace_searchbtn.prev {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.ace_searchbtn.next:hover, .ace_searchbtn.prev:hover {
+    background-color: grey;
+}
+
+/* Sidebar */
+.side {
+    margin: 271px 10px 100px 0px;
+	padding: 0;
+	background-color: transparent;
+	width: 320px;
+}
+
+.side:before {
+    content: "";
+    display: block;
+	width: 320px;
+	height: 353px;
+	margin-top: 5px;
+	background: url(%%sidebarimg%%);
+	border: 7px solid white; /* change back to 5px */
+    /*-webkit-animation: gif 3.5s steps(23) infinite;
+    animation: gif 3.5s steps(23) infinite;
+    background-position: -5px -5px;*/
+}
+
+@-webkit-keyframes gif {
+    from { background-position: -5px -5px; }
+    to   { background-position: -5px -4605px; }
+}
+
+@keyframes gif {
+    from { background-position: -5px -5px; }
+    to   { background-position: -5px -4605px; }
+}
+
+.side .spacer {margin: 0 0 5px 0;}
+
+.side .titlebox, .sidecontentbox {
+    background: white;
+    padding: 10px;
+}
+
+.titlebox h1 a, .titlebox h1 a:hover {
+    display: block;
+    width: 300px;
+    height: 88px;
+    background: url(%%t2%%);
+    font-size: 0;
+}
+
+.res-fancy-toggle-button.remove, .res-fancy-toggle-button {
+    width: 50%;
+    background: none;
+    margin: 0;
+    padding: 10px 0;
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    transition: color .3s;
+}
+
+.res-fancy-toggle-button.remove:hover { color: #FF444B; transition: color .3s; }
+
+.res-fancy-toggle-button:hover { color: #7BB850; transition: color .3s; }
+
+.titlebox span.number {
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #006A4E;
+}
+
+.sidecontentbox .content {
+    border: 0;
+}
+
+.sidecontentbox .helplink+.title+ul.content li {
+    display: block;
+    line-height: 30px;
+}
+
+.side .title h1, .side .usertext-body .md h5 {
+    font: normal 10px Arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.titlebox span.number:after, div.titlebox .users-online .number:after, .titlebox span.number {
+    font-family: cambria;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div.titlebox .subscribers .number, div.titlebox .subscribers .number:after {
+    font-size: 17px!important;
+    font-family: cambria;
+    font-weight: bold;
+}
+
+div.titlebox .subscribers .number:after {content: " winners eating cheeseburgers";}
+div.titlebox .users-online .number:after {content: " with their foot in the crease";}
+div.titlebox form.toggle.flairtoggle label:after {content: "Show my flair on this subreddit."; font-size: 10px!important;}
+
+
+/* Sidebar Menu */
+.side .subscribe-button {
+    position: absolute;
+    top: 285px;
+    right: 10px;
+    margin: 0;
+}
+
+.side .subscribe-button a, .sidebox.submit.submit-link .morelink a, .sidecontentbox a.helplink, .titlebox .tagline a.flairselectbtn, .side a[title="rules"] {
+    background: white;
+    width: 320px;
+    height: 36px;
+    font: normal 12px/36px Arial;
+    font-weight: bold; 
+    color: #A9A9A9;
+    padding: 0 10px!important;
+    transition: color 300ms ease;
+}
+
+.side .subscribe-button a {
+    position: relative;
+    margin: 0!important;
+    height: 39px;
+    line-height: 39px;
+    border: none;
+    border-radius: 0!important;
+}
+
+.side .subscribe-button a.active {
+    display: block;
+    text-align: left!important;
+}
+
+.sidebox.submit.submit-link .morelink {
+    position: absolute;
+    top: 324px;
+    right: 10px;
+    margin: 0;
+    height: 36px;
+}
+
+.sidebox.submit.submit-link .morelink a {
+    display: block;
+    text-align: left!important;
+    font-size: 0;
+}
+
+.sidebox.submit.submit-link .morelink a:after {
+    color:  #a9a9a9;
+    font: normal 12px/36px Arial;
+    letter-spacing: 0;
+    content: "Submit New Post";
+    text-transform: lowercase;
+    font-weight: bold; 
+    transition: color 300ms ease;
+}
+
+.sidecontentbox a.helplink {
+    position: absolute;
+    top: 360px;
+    right: 10px;
+    margin: 0;
+}
+
+.side a[title="rules"] {
+    position: absolute;
+    top: 396px;
+    right: 10px;
+}
+
+/* Flair Selector */
+
+.side .titlebox .tagline .flairselector.active+.userattrs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(47,46,50,0.7);
+}
+
+.side .titlebox .tagline .flairselector {
+    padding: 0!important;
+    background: #F5F5F5;
+}
+
+.side .titlebox .tagline .flairselector.active {
+    position: fixed!important;
+    top: 50%!important;
+    left: 50%!important;
+    z-index: 9!important;
+    width: 700px!important;
+    -webkit-transform: translate(-50%,-50%)!important;
+    transform: translate(-50%,-50%)!important;
+    border: none;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.side div.flairoptionpane {
+    height: auto;
+    max-height: 400px;
+    background: #F5F5F5;
+    margin: 0;
+}
+
+.side .titlebox .tagline .flairselector ul {
+    display: inline!important;
+    float: none!important;
+    white-space: normal;
+    margin: 0;
+}
+
+.side .titlebox .tagline .flairselector li {
+    width: 52px!important;
+    height: 52px!important;
+    padding: 10px;
+    border: none;
+    background: none;
+    display: inline-block!important;
+}
+
+.side .titlebox .tagline .flairselector .flair {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 0!important;
+    opacity: .6;
+    transition: .3s;
+}
+
+.side .titlebox .tagline .flairselection .flair {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.side .titlebox .tagline .flairselector .flair:before {
+    top: 0;
+    left: 0;
+}
+
+.side .titlebox .tagline .flairselection .flair:before {
+    top: -7px;
+    opacity: 1!important;
+}
+
+.side .titlebox .tagline .flairselector h2 {
+    background: #FAFAFA;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #BBB;
+    line-height: 33px;
+    margin: 0;
+}
+
+.side .flairselection span {
+    margin-right: 5px;
+}
+
+.side .flairselector form {
+    border-top: solid 1px #EEE;
+    background: #FAFAFA;
+    padding: 10px 2px;
+}
+
+.side .titlebox .tagline .flairselector .flair:hover {
+    opacity: 1;
+}
+
+/* Sidebar Buttons */
+.side .morelink {
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.side .morelink a {
+    font-size:0;
+}
+
+.side .morelink {
+    background: none;
+    background-color: #464646;
+}
+
+.side .morelink:hover {
+    box-shadow: none;
+}
+
+.side .morelink:hover {
+    background: none;
+    background-color: #232323;
+}
+
+/* Last Update */
+.side .md p+blockquote+p {
+    text-align: center;
+}
+
+.side a[href*="#update"] {
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    background: #E6E6E6;
+    padding: 2px 4px;
+    width: auto;
+    margin-bottom: 10px;
+    color: #9C9C9C;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.side a[href*="#updated"] {
+    background: transparent;
+    z-index: 1;
+}
+
+/* Headings */
+
+.side .usertext-body .md h4 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: 320px;
+    margin: 0px 0px 9px -10px;
+    color: white;
+    background: #006A4E;
+    /*background: -webkit-linear-gradient(bottom,#105E34 0%,#006A4E 30%);
+    background: -moz-linear-gradient(bottom,#105E34 0%,#006A4E 30%);
+    background: linear-gradient(to bottom,#105E34 0%,#006A4E 30%);*/
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.side .usertext-body .md h4+h4, .side .usertext-body .md h4+h4+ul+h4 {
+    color: #808080;
+    background: #F6F6F6;
+    /*background: -webkit-linear-gradient(bottom,#EBEBEB 0%,#F6F6F6 30%);
+    background: -moz-linear-gradient(bottom,#EBEBEB 0%,#F6F6F6 30%);
+    background: linear-gradient(to bottom,#EBEBEB 0%,#F6F6F6 30%);*/
+}
+
+.side .usertext-body .md h5 {
+    width: 320px;
+    margin: 0px 0 10px -10px;
+    color: gray;
+    border-top: 5px solid #EEE;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.side .usertext-body .md h5:first-of-type {
+    margin: 0 0 -10px -10px;
+}
+
+/* Tables
+--------- */
+.side .usertext-body .md table {
+    margin-top: -9px;
+    margin-left: -10px;
+    width: 320px;
+}
+
+.side .usertext-body .md table thead tr th {
+    font-size: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.side .usertext-body .md table thead tr th, .side .usertext-body .md table tbody tr td {
+    border: none;
+    line-height: 26px;
+}
+
+.side .usertext-body .md table tbody tr:nth-child(odd) td {
+    background: #F6F6F6;
+}
+
+.side .usertext-body .md table tbody tr td {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.side .usertext-body .md table tr th {
+    padding: 2px 7px!important;
+}
+
+.side .usertext-body .md table+h2+h4 {
+    margin: -5px 0px 0px -10px;
+}
+
+.side .usertext-body .md h2, .gadget .reddit-entry {
+    margin: 0px!important;
+}
+
+/* wildcard standings
+.side .usertext-body .md table tbody tr td {
+    background: #E0E0E0!important;
+}
+
+.side .usertext-body .md table tbody tr:nth-of-type(1) td, .side .usertext-body .md table tbody tr:nth-of-type(2) td, .side .usertext-body .md table tbody tr:nth-of-type(3) td {
+    background: white!important;
+}
+
+.side .usertext-body .md table tbody tr:nth-of-type(4) td, .side .usertext-body .md table tbody tr:nth-of-type(5) td {
+    background: #F6F6F6!important;
+}
+
+/* Colors */
+.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,
+.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,
+.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after,
+.usertext .bottom-area a.reddiquette, .wiki-page .pageactions .wikiaction-current, .tagline .submitter,
+.combined-search-page .search-result .search-result-header .search-title, .combined-search-page .search-result a,
+.combined-search-page .search-result a>mark, .combined-search-page .search-result .search-comments, 
+.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover,
+.comment .author:hover, .tagline a, .res-nightmode a, .res-nightmode .md a, .res-nightmode .share-button .option, .res-nightmode .share .option, .res-nightmode .wired a, .res-nightmode .side a, .res-nightmode .link .score.dislikes, .res-nightmode .linkcompressed .score.dislikes, .res-nightmode a[rel="tag"], .res-nightmode .dsq-help, .res-nightmode #authorInfoToolTip h3 a, .res-nightmode .reddiquette, .res-nightmode .parent .author, .res-nightmode .parent .subreddit, .res-nightmode .combined-search-page .search-result a, .res-nightmode .combined-search-page .search-result a > mark, .res-nightmode .hoverHelp, .res-nightmode .deepthread a, .res-nightmode .policy-page .md h1 a, .res-nightmode .policy-page .md h3 a, .res-show-link a, .res-show-link .toTop, res-show-link .toTop:hover { color: #006A4E; }
+
+/* Schedule */
+body > .content { margin-top: 105px; }
+body.comments-page > .content { margin-top: 105px; }
+
+.side .md h5+blockquote{
+    position: absolute;
+    top: 240px;
+    right: 350px;
+    left: 21px;
+    width: auto;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    overflow: hidden;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.side .md h5+blockquote ul {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    list-style: none;
+    font-size: x-small;
+    overflow: hidden;
+    max-height: 60px;
+}
+
+.side .md h5+blockquote ul * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.side .md h5+blockquote ul li {
+    position: relative;
+    display: inline-block;
+    width: calc(10% - -1px);
+    max-width: 176.03px;
+    height: 60px;
+    margin: 0 -2px;
+    vertical-align: middle;
+    text-align: center;
+    transition: all 200ms;
+    background: white;
+    border-left: 1px solid #eee;
+    z-index: 1;
+}
+
+.side .md h5+blockquote ul li a {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);    
+    color: #323232;
+}
+
+/* Links
+++++++++ */
+
+/* Events
+~~~~~~~~~ */
+
+.side .md h5+blockquote [href*="E"] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.side .md h5+blockquote [title*="D"] {
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.side .md h5+blockquote [title*="I"] {
+    justify-content: flex-start;
+}
+
+
+.side .md h5+blockquote [href*="#S"], .side .md h5+blockquote [href="#I"], .side .md h5+[href*="https://redd"] {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 15px;
+    pointer-events: none;
+}
+
+.side .md h5+blockquote [href*="#S"] {
+    bottom: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* unhide after 5 games have been played ---> */
+
+.side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#S"] {
+    font-weight: lighter;
+}
+
+.side .md h5+blockquote ul:hover [title*="Win"]:after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: -10px;
+    left: -5px;
+    display: inline-block;
+    padding-right: 5px;
+    background: #0a8464;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.side .md h5+blockquote ul:hover [title*="Loss"]:after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: -10px;
+    left: -5px;
+    display: inline-block;
+    padding-right: 5px;
+    background: #DDD;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.side .md h5+blockquote [title*="Win"]:before, .side .md h5+blockquote [title*="Loss"]:before {
+    content: attr(title);
+    font-size: x-small;
+    display: block;
+}
+
+.side .md h5+blockquote ul:hover [title*="Win"]:before,  .side .md h5+blockquote ul:hover [title*="Loss"]:before {
+    display: inline-block;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.side .md h5+blockquote ul:hover li [title*="W"] {
+    color: #1fc398;
+}
+
+.side .md h5+blockquote [href*="#I"] {
+    letter-spacing: 1px;
+}
+
+.side .md h5+blockquote li:nth-of-type(1) [href*="#I"], .side .md h5+blockquote li:nth-of-type(2) [href*="#I"], .side .md h5+blockquote li:nth-of-type(3) [href*="#I"], .side .md h5+blockquote li:nth-of-type(4) [href*="#I"], .side .md h5+blockquote li:nth-of-type(5) [href*="#I"] {
+    color: lightgrey;
+}
+
+.side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#I"] {
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* hide after season ends ---> */
+
+.side .md h5+blockquote [title*="@"]:before {
+    content: attr(title);
+    position: relative;
+    display: inline-block;
+    font-size: x-small;
+    top: 5px;
+    left: -30px;
+    pointer-events: none;
+}
+
+.side .md h5+blockquote [title*="VS"]:before {
+    content: attr(title);
+    position: relative;
+    display: inline-block;
+    font-size: x-small;
+    top: 6px;
+    left: -30px;
+    pointer-events: none;
+}
+
+.side .md h5+blockquote [href*="/r/"] {
+    display: block;
+    position: absolute;
+    top: 6px;
+    margin-left: 50%; /* calc(50% - 12px); to straighten */
+    width: 24px;
+    height: 24px;
+	background-image:url(%%teamsx24%%);
+	background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.side .md blockquote a[href*="/r/anaheimducks"] {background-position: 0 0;}
+.side .md blockquote a[href*="/r/coyotes"] {background-position: -24px 0;}
+.side .md blockquote a[href*="/r/bostonbruins"] {background-position: -48px 0;}
+.side .md blockquote a[href*="/r/sabres"] {background-position: -72px 0;}
+.side .md blockquote a[href*="/r/canes"] {background-position: -96px 0;}
+.side .md blockquote a[href*="/r/calgaryflames"] {background-position: -120px 0;}
+.side .md blockquote a[href*="/r/hawks"] {background-position: -144px 0;}
+.side .md blockquote a[href*="/r/bluejackets"] {background-position: -168px 0;}
+.side .md blockquote a[href*="/r/coloradoavalanche"] {background-position: -192px 0;}
+.side .md blockquote a[href*="/r/dallasstars"] {background-position: -216px 0;}
+.side .md blockquote a[href*="/r/detroitredwings"] {background-position: -240px 0;}
+.side .md blockquote a[href*="/r/edmontonoilers"] {background-position: -264px 0;}
+.side .md blockquote a[href*="/r/floridapanthers"] {background-position: -288px 0;}
+.side .md blockquote a[href*="/r/losangeleskings"] {background-position: -312px 0;}
+.side .md blockquote a[href*="/r/wildhockey"] {background-position: -336px 0;}
+.side .md blockquote a[href*="/r/habs"] {background-position: -360px 0;}
+.side .md blockquote a[href*="/r/devils"] {background-position: -384px 0;}
+.side .md blockquote a[href*="/r/predators"] {background-position: -408px 0;}
+.side .md blockquote a[href*="/r/newyorkislanders"] {background-position: -432px 0;}
+.side .md blockquote a[href*="/r/rangers"] {background-position: -456px 0;}
+.side .md blockquote a[href*="/r/ottawasenators"] {background-position: -480px 0;}
+.side .md blockquote a[href*="/r/flyers"] {background-position: -504px 0;}
+.side .md blockquote a[href*="/r/penguins"] {background-position: -528px 0;}
+.side .md blockquote a[href*="/r/sanjosesharks"] {background-position: -552px 0;}
+.side .md blockquote a[href*="/r/stlouisblues"] {background-position: -576px 0;}
+.side .md blockquote a[href*="/r/tampabaylightning"] {background-position: -600px 0;}
+.side .md blockquote a[href*="/r/leafs"] {background-position: -624px 0;}
+.side .md blockquote a[href*="/r/canucks"] {background-position: -648px 0;}
+.side .md blockquote a[href*="/r/goldenknights"] {background-position: -672px 0;}
+.side .md blockquote a[href*="/r/winnipegjets"] {background-position: -696px 0;}
+.side .md blockquote a[href*="/r/caps"] {background-position: -720px 0;}
+
+/* Posts */
+.linkinfo {
+    background: white;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    border: none;
+    border-radius: 0;
+}
+
+.link {
+    position: relative;
+    background: white!important;
+    padding: 10px 0px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.link .entry {
+    padding-left: 10px;
+    margin: 0;
+}
+
+.res .thing .tagline .author.moderator {
+    background-color: #27b062!important;
+    padding: 1px 4px;
+    border-radius: 1px;
+}
+
+.link .entry .tagline .userattrs a {
+    visibility: visible;
+    font-size: 10px;
+    padding: 1px 3px 1px 2px;
+    margin-left: 2px;
+    color: #fff!important;
+    position: relative;
+    top: -1px;
+    cursor: help;
+}
+
+.link .entry .tagline .userattrs a.moderator {
+    background-color: #27b062;
+}
+
+.link .entry .tagline {
+    line-height: 30px;
+    font-size: 11px;
+}
+
+.stickied.link {
+    
+}
+
+.stickied.link a, .tagline .stickied-tagline {
+    color: #006a4e!important;
+}
+
+/* Voting Arrows
+---------------- */
+body > .content .link .midcol, .comment .midcol {
+    width: 32px!important;
+}
+
+.arrow {
+    background: url(%%hsb%%) no-repeat 0 0!important;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.arrow.down {
+    width: 33px;
+    height: 21px;
+    background-position: 0 -197px!important;
+}
+
+.arrow.downmod {
+    width: 33px;
+    height: 21px;
+    background-position: -33px -197px!important;
+}
+
+.arrow.up {
+    width: 33px;
+    height: 21px;
+    background-position: -66px -197px!important;
+}
+
+.arrow.upmod {
+    width: 33px;
+    height: 21px;
+    background-position: -99px -197px!important;
+}
+
+.arrow:hover {
+    background-color: transparent!important;
+}
+
+.link .score.likes {
+    color: #108859!important;
+}
+
+.link .score.dislikes {
+    color: #525252!important;
+}
+
+/* Link Flair */
+.link .linkflairlabel .title a {
+    position: absolute;
+    display: block;
+    color: white;
+}
+
+.link .linkflairlabel .title, .link .linkflairlabel .title a {
+    min-width: 5px;
+    max-width: 5px!important;
+    border: none;
+    text-indent: 0px;
+    border-radius: 0;
+}
+
+.link .linkflairlabel .title {
+    position: absolute;
+    top: 10px;
+    margin-left: -10px;
+    bottom: 10px;
+    z-index: 5;
+}
+
+.link .linkflairlabel {
+    display: inline-block;    
+    margin-right: .5em;
+    padding: 0 2px;
+    background: #f5f5f5;
+    color: white!important;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.linkflair-other .title .linkflairlabel {
+        position: inherit;
+    text-indent: 0px;
+    max-width: none!important;
+    margin-left: 0px;
+    padding: 1px 6px;
+    vertical-align: top;
+    background: #f3f3f3;
+}
+
+.link .linkflairlabel {
+    background: #A9A9A9;
+    color: black;
+}
+
+.linkflair-pregame {
+    border: none!important;
+    border-left: 5px solid #D8DBDD!important;
+}
+
+.linkflair-game {
+    border: none!important;
+    border-left: 5px solid #006A4E!important;
+}
+
+.linkflair-postgame {
+    border: none!important;
+    border-left: 5px solid #282020!important;
+}
+
+.linkflair-ama {
+    border: none!important;
+    border-left: 5px solid lavender!important;
+}
+
+.linkflair-trade {
+    border: none!important;
+    border-left: 5px solid salmon!important;
+}
+
+.linkflair-roster {
+    border: none!important;
+    border-left: 5px solid lightgreen!important;
+}
+
+.linkflair-injury {
+    border: none!important;
+    border-left: 5px solid powderblue!important;
+}
+
+.linkflair-draft {
+    border: none!important;
+    border-left: 5px solid orange!important;
+}
+
+.linkflair-txstars {
+    border: none!important;
+    border-left: 5px solid #d9e279!important;
+}
+
+.linkflair-award {
+    border: none!important;
+    border-left: 5px solid #FFDF00!important;
+}
+
+.linkflair-subscription {
+    border: none!important;
+    border-left: 5px solid white!important;
+
+}
+
+/* Link Text */
+
+.link .usertext .md {
+    margin-top: 12px;
+    padding-top: 12px;
+    padding-left: 0;
+    background-color: transparent;
+    border: 0 solid;
+    border-top: 1px solid #edf1f3;
+    border-bottom: 1px solid #edf1f3;
+    border-radius: 0;
+    color: #292f34;
+}
+
+/* Comments */
+.linkinfo {
+    box-shadow: none;
+    color: #A9A9A9;
+}
+
+.linkinfo .shortlink input {
+    border-color: #A9A9A9;
+    color: #006A4E
+}
+
+body.comments-page > .content {
+    background: white;
+}
+
+.res-commentBoxes .comment {
+    border: none!important;
+    border-radius: 0!important;
+}
+
+.comment .midcol {
+    margin: 0!important;
+}
+
+.comment .entry {
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.comment .entry:hover {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    transition: all 200ms ease;
+}
+
+.comment .entry:hover .tagline {
+    background: #F3F3F3;
+}
+
+.comment .tagline a {
+    color: #006A4E;
+}
+
+.comment .tagline a:hover {
+    text-decoration: none;
+}
+
+.comment .entry .tagline {
+    position: relative;
+    display: block;
+    padding: 3px 8px;
+    line-height: 30px;
+    background: #F6F6F6;
+    border: 1px solid #E4E4E4;
+    border-bottom: none;
+}
+
+.comment.collapsed .tagline {
+    background: #F6F6F6;
+    border-color: #F6F6F6;
+}
+
+.res .thing .tagline .author.submitter {
+    border-radius: 2px;
+    background-color: #006A4E!important;
+    padding: 1px 4px;
+}
+
+.res .thing .tagline .author.submitter:hover {
+    box-shadow: none!important;
+    background-color: #46C797!important;
+}
+
+.comment .entry .md {
+    font-size: small;
+    max-width: inherit;
+    margin: 0;
+    padding: 8px 10px 6px 10px;
+    background: #FFF;
+    border: 1px solid #E4E4E4;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.RESDialogSmall.livePreview {
+    border-radius: 0px;
+}
+
+.RESDialogSmall.livePreview h3 {
+    padding-top: 5px;
+}
+
+.comment .entry .flat-list {
+    font-size: xx-small;
+    line-height: 19px;
+    padding: 0 4px;
+    background: #FFF;
+    border: 1px solid #E6E6E6;
+    border-top: 0;
+    text-transform: capitalize!important;
+}
+
+.new-comment .usertext-body {
+    background-color: rgba(78,183,134,0.72);
+    border: solid 1px #7FCBA7;
+}
+
+html.res-commentBoxes .comment, html.res-commentBoxes .comment .comment, html.res-commentBoxes .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, html.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    margin: 0!important;
+    padding: 0!important;
+    background: transparent!important;
+    border: none!important;
+}
+
+.comment .child .comment {
+    position: relative;
+}
+
+.comments-page .child, .res-commentBoxes .comment .child {
+    margin-left: 32px;
+}
+
+.comment .child .comment:before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 1px;
+    height: 100%;
+    background: #E6E6E6;
+}
+
+.deepthread {
+    display: block;
+    width: 100%;
+    border: 1px solid #E4E4E4;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 4px;
+}
+
+.deepthread a {
+    color: #006A4E;
+}
+
+.deepthread:after {
+    content: "➤";
+    margin-left: 5px;
+    color: #006A4E;
+    background: none;
+}
+
+/* Stylesheet Page */
+.stylesheet-customize-container .pretty-form {
+	padding-top: 0;
+	padding: 8px 0;
+	margin-bottom: 16px;
+}
+
+.stylesheet-customize-container .pretty-form .sheets {margin-right: 0;}
+
+.stylesheet-customize-container h2 {display: none;}
+
+.sheets .btn.right {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+/* Wiki */
+
+.wiki-page > .content { padding-top: 0; background: #EEE; }
+.wiki-page > .content > span:first-of-type { height: 33px; display: block; margin: 0; background: #FAFAFA; line-height: 33px; }
+.wiki-page .wiki-page-content { padding: 0; margin: 0; background: #F5F5F5; border-top: 1px solid #EEE; color:#222; }
+.wiki-page .wiki-page-content .md.wiki { min-height: 350px; padding: 57px 15px 15px; margin-left: 150px; position: relative; background: #F5F5F5; font-family: sans-serif; font-size: 12px; overflow: visible; }
+body[class*=" wiki-page-season"] .wiki-page-content .md.wiki { min-height: 550px; }
+
+.wiki-page .wikititle { margin: 0 0 0 10px; font-family: sans-serif; font-size: 11px; vertical-align: baseline; }
+.wiki-page .wikititle strong { font-size: 11px; font-weight: normal; text-transform: uppercase; color: #BBB; }
+.wiki-page .wikititle strong:after { content:"/"; margin: 0 8px; color: #CCC; }
+.wiki-page .pageactions { margin: 0; border: none; border-radius: 0; vertical-align: baseline; }
+.wiki-page .pageactions a.wikiaction { padding:0;margin: 0 10px 0 0; background: transparent; border-radius: 0; font-family: sans-serif; font-size: 11px; font-weight: normal; text-transform: uppercase; color: #BBB; }
+.wiki-page .pageactions a.wikiaction:hover { background: transparent; color: #888; }
+.wiki-page .pageactions a.wikiaction.wikiaction-current { color: #888; }
+
+.wiki-page > .content > .infobar { padding: 3px 10px; margin: 0; border: none; font-family: sans-serif; color: #555;}
+.wiki-page > .content > .infobar .md { font-size: 11px; }
+
+.wiki-page .wiki-page-content .md.wiki > .toc { display: none; }
+
+.wiki-page-content .md h6 {
+    font-size: 0;
+    margin: 0;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -150px;
+    background: #006A4E;
+    font-family: sans-serif;
+    list-style: none;
+    z-index: 2;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul>li {
+    height: 35px;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul>li a {
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    text-indent: 10px;
+    color: #01AA71;
+}
+
+.wiki-page .wiki-page-content .md.wiki > h6 + ul > li a:hover {
+    background-color: #01885A;
+    color: #00D28B;
+}
+
+.wiki-page .md.wiki > h6 + ul li a[href$="ac"] {
+    color: #FFFFFF;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul ul {
+    position: relative;
+    left: 150px;
+    top: -35px;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background-color: #FDFDFD;
+    display: none;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul ul li a {
+    color: #006A4E;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul ul li a:hover {
+    color: #00402A;
+    background-color: #EEEEEE;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h6+ul>li:hover ul {
+    display: block;
+}
+
+.wiki-page .wiki-page-content .md.wiki h1,
+.wiki-page .wiki-page-content .md.wiki h2,
+.wiki-page .wiki-page-content .md.wiki h3,
+.wiki-page .wiki-page-content .md.wiki h4 {
+  margin: 5px 0 15px;
+  font-family: sans-serif;
+  color: #222;
+}
+.wiki-page .wiki-page-content .md.wiki h4 {
+  font-size: 15px;
+}
+.wiki-page .wiki-page-content .md.wiki .expando-button {
+  float: none;
+  margin: 2px 5px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.wiki-page .wiki-page-content .md.wiki > h2 {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.wiki-page .wiki-page-content .md.wiki>h1 {
+    height: 45px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 45px;
+    color: rgba(119,119,119,0.7);
+}
+
+.wiki-page .wiki-page-content>hr {
+    height: 1px;
+    margin: 0;
+    border: none;
+    background: #EEE;
+}
+
+.wiki-page .wiki-page-content>em {
+    height: 30px;
+    padding: 0 15px;
+    margin-left: 150px;
+    display: block;
+    background: #FAFAFA;
+    line-height: 30px;
+    font-size: 11px;
+    color: #888;
+}
+
+.wiki-page .wiki-page-content>em:before {
+    content: "";
+    width: 150px;
+    height: 30px;
+    margin-top: -1px;
+    position: absolute;
+    left: 10px;
+    background: #006A4E;
+    border-top: 1px solid #006A4E;
+}
+
+.wiki-page .wiki-page-content > em a { color: #222; }
+
+.RESDialogSmall.livePreview {
+    background: transparent;
+    margin-top: 22px;
+}
+
+.wiki-page.wiki-page-visiting_dallas .md img {
+    position: absolute;
+    bottom: 0;
+    margin-left: calc(50% - 222.5px);
+}
+
+.wiki-page.wiki-page-legends .md img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    margin-left: calc(50% - 258px);
+    width: 514px;
+    height: 120px;
+}
+
+.wiki-page.wiki-page-legends .md ul+p {
+    height:80px;
+}
+
+.wiki-page.wiki-page-history .md h3+ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.wiki-page.wiki-page-history .md h3+ul:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 95%;
+    background: #DDD;
+    top: 0;
+    left: 15px;
+    z-index: 0;
+}
+
+.wiki-page.wiki-page-history .md h3+ul li {
+    list-style: none!important;
+}
+
+.wiki-page.wiki-page-history .md h3+ul > li:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #F5F5F5;
+    background-image: url(%%i%%);
+    border: 1px solid #DDD;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.wiki-page.wiki-page-history .md h3+ul > li p:before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background: #DDD;
+    margin-top: 10px;
+    left: 30px;
+}
+
+.wiki-page.wiki-page-history .md h3+ul > li p {
+    font-size: 17px!important;
+    margin: 5px 0 15px;
+    font-family: sans-serif;
+    color: #222;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-top: 5px;
+}
+
+.wiki-page.wiki-page-history .md h3+ul > li:before {
+    background-position: -91px -1px;
+}
+
+/* Wiki Roster */
+
+.wiki-page.wiki-page-roster .md.wiki a[href^="#PL"], .wiki-page.wiki-page-legends .md.wiki a[href^="#PL"] {
+    display: block;
+    height: 105px!important;
+    margin: 0px auto;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr, .wiki-page.wiki-page-legends .md.wiki hr {
+    background: transparent;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul, .wiki-page.wiki-page-legends .md.wiki hr+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    background: white;
+    border-top: 1px solid #E0E0E0;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul li, .wiki-page.wiki-page-legends .md.wiki hr+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:first-of-type, .wiki-page.wiki-page-legends .md.wiki hr+ul > li:first-of-type {
+    height: 110px!important;
+    width: 200px;
+    border-bottom: 1px solid #006A4E;
+    float: left;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(2), .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(2) {
+    left: 10px;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(4), .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(4) {
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(2), .wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(3), .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(3), .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(2) {
+    display: block;
+    height: 52.5px;
+    width: calc(100% - 200px);
+    margin: 0;
+    margin-left: -75px;
+    top: 15px;
+    padding-left: 10px;
+    float: left;
+    color: #565656;
+    font: normal 18px Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li blockquote, .wiki-page.wiki-page-legends .md.wiki hr+ul > li blockquote {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    border: none;
+    bottom: 0;    
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(3) blockquote, .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(3) blockquote {
+    top: 0;
+    margin-top: -13px;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(3), .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(3) {
+    font: 900 24px Arial, sans-serif;
+}
+
+.wiki-page.wiki-page-roster .md.wiki hr+ul > li:nth-of-type(3) blockquote a, .wiki-page.wiki-page-legends .md.wiki hr+ul > li:nth-of-type(3) blockquote a {
+    border-left: 1px solid #A0A0A0;
+    padding-left: 10px;
+}
+
+/* Submit Page */
+
+.submit-page .formtabs-content {
+    margin: 0 auto;
+    padding: 0;
+    background: #FDFDFD;
+    border: none;
+}
+
+.submit-page .formtabs-content .roundfield {
+    background: none;
+    border-radius: 0;
+    width: 520px;
+}
+
+.submit-page .infobar {
+    background-color: #DADADA;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.submit-page .content.submit .info-notice {
+    background-color: #DADADA;
+    border: none;
+    border-top: 1px solid #BDBDBD;
+    width: 520px;
+    margin: 0 auto;    
+    margin-top: -15px;
+    border-radius: 0;
+}
+
+.submit-page .spacer button {
+    margin: 20px 0;
+    margin-left: calc(50% - 27.5px);
+}
+
+.submit-page ul.tabmenu {
+    width: 520px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.submit-page ul.tabmenu li {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin: 10px 20px 10px 0;
+}
+
+.submit-page .tabmenu.formtab a {
+    display: block;
+    background: #FDFDFD;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    padding: 10px;
+    border-bottom: 3px solid #DADADA;
+}
+
+.submit-page .tabmenu.formtab li.selected a {
+    border-color: #006A4E;
+}
+
+/* Hidden Elements */
+#header .pagename, .side .titlebox .tagline, div.titlebox form.toggle.flairtoggle label {
+    font-size: 0!important;
+}
+
+.sidebox.create, .link .rank, .sidecontentbox .more, .sidebox.create, .account-activity-box, .side .gadget .flair, .side .gadget .linkflairlabel, .side .gadget .midcol, .morelink .nub, .sidebox.submit.submit-text, #RESShortcutsEditContainer, .titlebox .bottom, div.titlebox span.word, div.titlebox .users-online .word, .side .gadget .linkflairlabel, .flairselector .linkflair a.title:before, #suggested-reddits, .submit-page .content > h1, #searchexpando, .side .titlebox .tagline .flairselector li a, .side .titlebox .flairselector a.author, .users-online:before, .keyNavAnnotation, .linkflair .md hr, .side ~ .RESHoverInfoCard, .multi-count { display: none!important; }
+
+.link .entry .tagline .userattrs {
+    visibility: hidden;
+}
+
+.link.last-clicked {
+    border: none;
+}
+
+.flairtoggle+.tagline .flair:hover, .sidecontentbox .flair:hover {
+    width: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background: transparent;
+    text-indent: -9999px;
+}
+
+/* snoo */
+
+.submit-page #header-img.default-header,.submit-page #header-img {
+    top: -99px
+}
+
+#header-img.default-header, #header-img {
+    position: absolute;
+    float: left;
+    width: 70px;
+    height: 97px;
+    background: url(%%hsb%%) no-repeat 0 0;
+    background-position: -354px -257px;
+    margin: 0;
+    font-size: 0;
+    top: -99px;
+    left: 3px
+}
+
+#header-img.default-header:hover , #header-img:hover {
+    background-position: -424px -257px
+}
+
+
+.side a[href$="/r/hockey"] {
+	content: "";
+	height: 97px;
+	width: 35px;
+	display: block;
+    position: absolute;
+    top: 100px;
+    left: 3px;
+    background-image: url(%%hsb%%);
+    background-position: -354px -355px;
+    opacity: 0;
+}
+
+.side a[href$="/r/hockey"]:hover {
+    opacity: 1;
+}
+
+.side a[href$="/r/hockey"]:hover ~ .RESHover.RESDialogSmall {
+    display: none!important;
+}
+
+/* Stanley Cup
+-------------- */
+.side a[href*="#SC"] {
+	content: "";
+	height: 172px;
+	width: 177px;
+	background: url(%%hsb%%) no-repeat 0 0;
+	background-position: 0 -257px;
+	background-color: transparent;
+	display: block;
+	position:absolute;
+	/*top: 24px;
+	right: 111px;*/
+	top: 28px;
+    right: 380px;
+	z-index: 5;
+	cursor: default;
+}
+
+.side a[href*="#SCH"] {
+	content: "";
+    display: block;
+    /* position: absolute; */
+    height: 172px;
+	width: 177px;
+    background: url(%%hsb%%) no-repeat 0 0;
+	background-position: -177px -257px;
+    background-repeat: no-repeat;
+    transition: all 200ms ease;
+    opacity: 0;
+    /* margin-top: -24px; */
+    /* margin-left: 2px; */
+}
+
+.side a[href*="#SCH"]:hover {
+    opacity: 1;
+	-webkit-animation: shine 2s infinite;
+    animation: shine 2s infinite;
+    cursor: default;
+}
+
+
+@-webkit-keyframes shine {
+    0% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+@keyframes shine {
+    0% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+
+/* Retired
+---------- */
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"] {
+    content: "";
+	height: 100px;
+	width: 70px;
+	background-image: url(%%retired%%);
+	background-color: transparent;
+	display: block;
+	position:absolute;
+	/*top: 24px;
+	right: 111px;*/
+	top: 25px;
+	z-index: 5;
+	cursor: default;
+}
+
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:after {
+    background-image: url(%%retired%%);
+    width: 70px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: default;
+}
+
+.side a[href$="Masterton"] { background-position: 0px 0px; right: 341px; transition: all 200ms ease; }
+.side a[href$="Goldsworthy"] { background-position: -70px 0px; right: 261px; transition: all 200ms ease; }
+.side a[href$="Broten"] { background-position: -140px 0px; right: 181px; transition: all 200ms ease; }
+.side a[href$="Modano"] { background-position: -210px 0px; right: 101px; transition: all 200ms ease; }
+.side a[href$="Lehtinen"] { background-position: -280px 0px; right: 21px; transition: all 200ms ease; }
+
+.side a[href$="Masterton"]:after { background-position: 0px -100px; right: 341px; transition: all 200ms ease; }
+.side a[href$="Goldsworthy"]:after { background-position: -70px -100px; right: 261px; transition: all 200ms ease; }
+.side a[href$="Broten"]:after { background-position: -140px -100px; right: 181px; transition: all 200ms ease; }
+.side a[href$="Modano"]:after { background-position: -210px -100px; right: 101px; transition: all 200ms ease; }
+.side a[href$="Lehtinen"]:after { background-position: -280px -100px; right: 21px; transition: all 200ms ease; }
+
+.side a[href$="Masterton"]:hover:after { background-position: 0px -100px; right: 341px; transition: all 200ms ease; opacity: 1; }
+.side a[href$="Goldsworthy"]:hover:after { background-position: -70px -100px; right: 261px; transition: all 200ms ease; opacity: 1; }
+.side a[href$="Broten"]:hover:after { background-position: -140px -100px; right: 181px; transition: all 200ms ease; opacity: 1; }
+.side a[href$="Modano"]:hover:after { background-position: -210px -100px; right: 101px; transition: all 200ms ease; opacity: 1; }
+.side a[href$="Lehtinen"]:hover:after { background-position: -280px -100px; right: 21px; transition: all 200ms ease; opacity: 1; }
+
+/* Spotlight
+++++++++++++ */
+.side .titlebox a[href$="light"] {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url(%%retired%%);
+    background-position: 0px -200px;
+    top: 62px;
+    z-index: 5;
+    opacity: 0;
+    cursor: default;
+	pointer-events: none;
+}
+
+a[href*="#mstlight"] { top: 35; right: 345px; transition: all 200ms ease; }
+a[href*="#gldlight"] { top: 35; right: 265px; transition: all 200ms ease; }
+a[href*="#brtlight"] { top: 35; right: 185px; transition: all 200ms ease; }
+a[href*="#mdnlight"] { top: 35; right: 105px; transition: all 200ms ease; }
+a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
+
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:hover + a[href$="mstlight"], a[href$="mstlight"]:hover { top: 35px; transition: all 200ms ease; opacity: 1;}
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:hover + a[href$="gldlight"], a[href$="gldlight"]:hover { top: 35px; transition: all 200ms ease; opacity: 1;}
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:hover + a[href$="brtlight"], a[href$="brtlight"]:hover { top: 35px; transition: all 200ms ease; opacity: 1;}
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:hover + a[href$="mdnlight"], a[href$="mdnlight"]:hover { top: 35px; transition: all 200ms ease; opacity: 1;}
+.side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:hover + a[href$="lhtlight"], a[href$="mdnlight"]:hover { top: 35px; transition: all 200ms ease; opacity: 1;}
+
+/* Images */
+/* PT Players
+------------- */
+.linkflair-game .md hr+ul li a[href^="#PL"], .wiki-page.wiki-page-roster a[href^="#PL"],  .side h4+ul li a[href^="#PL"]  {
+	width: 135px;
+    height: 135px;
+	background-image:url(%%players%%);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+.side h4+ul li a[href^="#PL"] { width: 70px!important; height: 70px!important; background-position-y: 0;}
+
+.md  a[href$="03"] { background-position-x: calc(-135px * 1); }
+.md  a[href$="04"] { background-position-x: calc(-135px * 2); }
+.md  a[href$="05"] { background-position-x: calc(-135px * 3); }
+.md  a[href$="06"] { background-position-x: calc(-135px * 4); }
+.md  a[href$="11"] { background-position-x: calc(-135px * 5); }
+.md  a[href$="12"] { background-position-x: calc(-135px * 6); }
+.md  a[href$="13"] { background-position-x: calc(-135px * 7); }
+.md  a[href$="14"] { background-position-x: calc(-135px * 8); }
+.md  a[href$="15"] { background-position-x: calc(-135px * 9); }
+.md  a[href$="16"] { background-position-x: calc(-135px * 10); }
+.md  a[href$="17"] { background-position-x: calc(-135px * 11); }
+.md  a[href$="18"] { background-position-x: calc(-135px * 12); }
+.md  a[href$="23"] { background-position-x: calc(-135px * 13); }
+.md  a[href$="24"] { background-position-x: calc(-135px * 14); }
+.md  a[href$="25"] { background-position-x: calc(-135px * 15); }
+.md  a[href$="28"] { background-position-x: calc(-135px * 16); }
+.md  a[href$="30"] { background-position-x: calc(-135px * 17); }
+.md  a[href$="33"] { background-position-x: calc(-135px * 18); }
+.md  a[href$="35"] { background-position-x: calc(-135px * 19); }
+.md  a[href$="43"] { background-position-x: calc(-135px * 20); }
+.md  a[href$="45"] { background-position-x: calc(-135px * 21); }
+.md  a[href$="46"] { background-position-x: calc(-135px * 22); }
+.md  a[href$="47"] { background-position-x: calc(-135px * 23); }
+.md  a[href$="90"] { background-position-x: calc(-135px * 24); }
+.md  a[href$="91"] { background-position-x: calc(-135px * 25); }
+.md  a[href$="37"] { background-position-x: calc(-135px * 26); }
+.md  a[href$="34"] { background-position-x: calc(-135px * 27); }
+.md  a[href$="48"] { background-position-x: calc(-135px * 28); }
+.md  a[href$="39"] { background-position-x: calc(-135px * 29); }
+.md  a[href$="63"] { background-position-x: calc(-135px * 30); }
+.md  a[href$="44"] { background-position-x: calc(-135px * 31); }
+.md  a[href$="42"] { background-position-x: calc(-135px * 32); }
+.md  a[href$="41"] { background-position-x: calc(-135px * 33); }
+
+/* GT Teams
+----------- */
+.linkflair-gamethread .md hr+ul:nth-of-type(1) li:first-child a[href^="#"],
+.linkflair-gamethread .md hr+ul:nth-of-type(1) li:last-child a[href^="#"],
+.linkflair-pregame .md hr+blockquote ul:nth-of-type(1) li:first-child a[href^="#"],
+.linkflair-pregame .md hr+blockquote ul:nth-of-type(1) li:last-child a[href^="#"] {
+	width: 60px;
+    height: 60px;
+	background-image:url(%%teams%%);
+	background-repeat: no-repeat;
+    background-size: auto 60px;
+}
+
+ .md  a[href$="ANA"] {background-position: 0 0;}
+ .md  a[href$="ARI"] {background-position: -60px 0;}
+ .md  a[href$="BOS"] {background-position: -120px 0;}
+ .md  a[href$="BUF"] {background-position: -180px 0;}
+ .md  a[href$="CAR"] {background-position: -240px 0;}
+ .md  a[href$="CAL"] {background-position: -300px 0;}
+ .md  a[href$="CHI"] {background-position: -360px 0;}
+ .md  a[href$="CBJ"] {background-position: -420px 0;}
+ .md  a[href$="COL"] {background-position: -480px 0;}
+ .md  a[href$="DAL"] {background-position: -540px 0;}
+ .md  a[href$="DET"] {background-position: -600px 0;}
+ .md  a[href$="EDM"] {background-position: -660px 0;}
+ .md  a[href$="FLA"] {background-position: -720px 0!important;}
+ .md  a[href$="LAK"] {background-position: -780px 0;}
+ .md  a[href$="MIN"] {background-position: -840px 0;}
+ .md  a[href$="MON"] {background-position: -900px 0;}
+ .md  a[href$="NJD"] {background-position: -960px 0;}
+ .md  a[href$="NSH"] {background-position: -1020px 0;}
+ .md  a[href$="NYI"] {background-position: -1080px 0;}
+ .md  a[href$="NYR"] {background-position: -1140px 0;}
+ .md  a[href$="OTT"] {background-position: -1200px 0;}
+ .md  a[href$="PHI"] {background-position: -1260px 0;}
+ .md  a[href$="PIT"] {background-position: -1320px 0;}
+ .md  a[href$="SJS"] {background-position: -1380px 0;}
+ .md  a[href$="STL"] {background-position: -1440px 0;}
+ .md  a[href$="TBL"] {background-position: -1500px 0;}
+ .md  a[href$="TOR"] {background-position: -1560px 0;}
+ .md  a[href$="VAN"] {background-position: -1620px 0;}
+ .md  a[href$="VGK"] {background-position: -1680px 0;}
+ .md  a[href$="WIN"] {background-position: -1740px 0;}
+ .md  a[href$="WSH"] {background-position: -1800px 0;}
+ 
+ /* Table Teams
+----------- */
+.side .md table a[href^="/r/"], .side .md table a[href^="/r/"] {
+	width: 30px;
+    height: 30px;
+	background-image:url(%%f%%);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.side .md table a[href$="/r/anaheimducks"], .flair-TEAMANA:before {background-position: 0 -90px;}
+.side .md table a[href$="/r/coyotes"], .flair-TEAMARI:before {background-position: -30px -90px;}
+.side .md table a[href$="/r/bostonbruins"], .flair-TEAMBOS:before {background-position: -60px -90px;}
+.side .md table a[href$="/r/sabres"], .flair-TEAMBUF:before {background-position: -90px -90px;}
+.side .md table a[href$="/r/canes"], .flair-TEAMCAR:before {background-position: -120px -90px;}
+.side .md table a[href$="/r/calgaryflames"], .flair-TEAMCGY:before {background-position: -150px -90px;}
+.side .md table a[href$="/r/hawks"], .flair-TEAMCHI:before {background-position: -180px -90px;}
+.side .md table a[href$="/r/bluejackets"], .flair-TEAMCLS:before {background-position: -210px -90px;}
+.side .md table a[href$="/r/coloradoavalanche"], .flair-TEAMCOL:before {background-position: -240px -90px;}
+.side .md table a[href$="/r/dallasstars"], .flair-TEAMDAL:before {background-position: -270px -90px;}
+.side .md table a[href$="/r/detroitredwings"], .flair-TEAMDET:before {background-position: -300px -90px;}
+.side .md table a[href$="/r/edmontonoilers"], .flair-TEAMEDM:before {background-position: -330px -90px;}
+.side .md table a[href$="/r/floridapanthers"], .flair-TEAMFLA:before {background-position: -360px -90px;}
+.side .md table a[href$="/r/losangeleskings"], .flair-TEAMLA:before {background-position: -390px -90px;}
+.side .md table a[href$="/r/wildhockey"], .flair-TEAMMIN:before {background-position: -420px -90px;}
+.side .md table a[href$="/r/habs"], .flair-TEAMMTL:before {background-position: -450px -90px;}
+.side .md table a[href$="/r/devils"], .flair-TEAMNJ:before {background-position: -480px -90px;}
+.side .md table a[href$="/r/predators"], .flair-TEAMNSH:before {background-position: -510px -90px;}
+.side .md table a[href$="/r/newyorkislanders"], .flair-TEAMNYI:before {background-position: -540px -90px;}
+.side .md table a[href$="/r/rangers"], .flair-TEAMNYR:before {background-position: -570px -90px;}
+.side .md table a[href$="/r/ottawasenators"], .flair-TEAMOTT:before {background-position: -600px -90px;}
+.side .md table a[href$="/r/flyers"], .flair-TEAMPHI:before {background-position: -630px -90px;}
+.side .md table a[href$="/r/penguins"], .flair-TEAMPIT:before {background-position: -660px -90px;}
+.side .md table a[href$="/r/sanjosesharks"], .flair-TEAMSJ:before {background-position: -690px -90px;}
+.side .md table a[href$="/r/stlouisblues"], .flair-TEAMSTL:before {background-position: -720px -90px;}
+.side .md table a[href$="/r/tampabaylightning"], .flair-TEAMTB:before {background-position: -750px -90px;}
+.side .md table a[href$="/r/leafs"], .flair-TEAMTOR:before {background-position: -780px -90px;}
+.side .md table a[href$="/r/canucks"], .flair-TEAMVAN:before {background-position: -810px -90px;}
+.side .md table a[href$="/r/goldenknights"], .flair-TEAMVGK:before {background-position: -840px -90px;}
+.side .md table a[href$="/r/winnipegjets"], .flair-TEAMWIN:before {background-position: -870px -90px;}
+.side .md table a[href$="/r/caps"], .flair-TEAMWSH:before {background-position: -900px -90px;}
+
+/* Icons
+-------- */
+.side .md h5+ul {
+    display: table;
+    list-style: none;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.side .md h2+h5+ul {
+    width: 240px;
+}
+
+.side .md h5+ul li {
+    display: inline-block;
+    margin: 0 2px;
+    height: 40px;
+    width: 40px;
+}
+
+.side .md h5+ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(%%i%%);
+    background-color: #F7F7F7;
+    box-shadow: inset 0px 0px 10px -4px #DBDBDB;
+    border-radius: 4px;
+    font-size: 0;
+}
+
+.side .md h5+ul li a:hover {
+    box-shadow: inset 0px 0px 10px -4px rgba(31, 31, 31, 0.46);
+}
+
+/* Standings
+++++++++++++ */
+.side .md h5+ul li a[title="Conference"] { background-position: -245px -60px; }
+.side .md h5+ul li a[title="Conference"]:hover { background-position: -245px -100px; background-color: #003e7e;}
+
+.side .md h5+ul li a[title="Wild Card"] { background-position: -285px -60px; }
+.side .md h5+ul li a[title="Wild Card"]:hover { background-position: -285px -100px; background-color: #043567;}
+
+/* Links
+++++++++ */
+.side .md h5+ul li a[title="Stars Website"] { background-position: 0px -140px; }
+.side .md h5+ul li a[title="Stars Website"]:hover { background-position: 0px -180px; background-color: #006a4e;}
+
+.side .md h5+ul li a[title*="Hockey"] { background-position: -40px -140px; }
+.side .md h5+ul li a[title*="Hockey"]:hover { background-position: -40px -180px; background-color: #5f99cf;}
+
+.side .md h5+ul li a[title="DMN"] { background-position: -80px -140px; }
+.side .md h5+ul li a[title="DMN"]:hover { background-position: -80px -180px; background-color: black;}
+
+.side .md h5+ul li a[title="ESPN"] { background-position: -120px -140px; }
+.side .md h5+ul li a[title="ESPN"]:hover { background-position: -120px -180px; background-color: #cc0000;}
+
+.side .md h5+ul li a[title*="NHL"] { background-position: -160px -140px; }
+.side .md h5+ul li a[title*="NHL"]:hover { background-position: -160px -180px; background-color: #f3721e;}
+
+.side .md h5+ul li a[title="TSN"] { background-position: -200px -140px; }
+.side .md h5+ul li a[title="TSN"]:hover { background-position: -200px -180px; background-color: #ef3e33;}
+
+.side .md h5+ul li a[title="The Ticket"] { background-position: -240px -140px; }
+.side .md h5+ul li a[title="The Ticket"]:hover { background-position: -240px -180px; background-color: #000ca9;}
+
+.side .md h5+ul li a[title*="Team USA"] { background-position: -280px -140px; }
+.side .md h5+ul li a[title*="Team USA"]:hover { background-position: -280px -180px; background-color: #d12139;}
+
+.side .md h5+ul li a[title*="Team Canada"] { background-position: -320px -140px; }
+.side .md h5+ul li a[title*="Team Canada"]:hover { background-position: -320px -180px; background-color: #d02139;}
+
+.side .md h5+ul li a[title*="Texas"] { background-position: -360px -140px; }
+.side .md h5+ul li a[title*="Texas"]:hover { background-position: -360px -180px; background-color: #006537;}
+
+/* Cities
++++++++++ */
+.side .md h5+ul li a[title="Plano"] { background-position: 0px -60px; }
+.side .md h5+ul li a[title="Plano"]:hover { background-position: 0px -100px; background-color: #c30e2f;}
+.side .md h5+ul li a[title="Richardson"] { background-position: -40px -60px; }
+.side .md h5+ul li a[title="Richardson"]:hover { background-position: -40px -100px; background-color: #00529c;}
+.side .md h5+ul li a[title="Frisco"] { background-position: -80px -60px; }
+.side .md h5+ul li a[title="Frisco"]:hover { background-position: -80px -100px; background-color: #ef3125;}
+.side .md h5+ul li a[title="Euless"] { background-position: -125px -60px; }
+.side .md h5+ul li a[title="Euless"]:hover { background-position: -125px -100px; background-color: #0a2c74;}
+.side .md h5+ul li a[title="McKinney"] { background-position: -165px -60px; }
+.side .md h5+ul li a[title="McKinney"]:hover { background-position: -165px -100px; background-color: #005953;}
+.side .md h5+ul li a[title="Farmers Branch"] { background-position: -205px -60px; }
+.side .md h5+ul li a[title="Farmers Branch"]:hover { background-position: -205px -100px; background-color: #5b8726;}
+
+/* Subs
++++++++++ */
+.side .md h5+ul li a[title="Cowboys"] { background-position: -325px -60px; }
+.side .md h5+ul li a[title="Cowboys"]:hover { background-position: -325px -100px; background-color: #0D254C;}
+.side .md h5+ul li a[title="Rangers"] { background-position: -365px -60px; }
+.side .md h5+ul li a[title="Rangers"]:hover { background-position: -365px -100px; background-color: #003279;}
+.side .md h5+ul li a[title="Mavericks"] { background-position: -405px -60px; }
+.side .md h5+ul li a[title="Mavericks"]:hover { background-position: -405px -100px; background-color: #007DC5;}
+.side .md h5+ul li a[title="FC Dallas"] { background-position: -405px -140px; }
+.side .md h5+ul li a[title="FC Dallas"]:hover { background-position: -405px -180px; background-color: #BF0D3E;}
+
+/* Leaderboard
+-------------- */
+
+.side h4+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side h4+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.side h4+ul ul li:first-of-type {
+    font-weight: bold;
+    color: #006A4E;
+    width: calc(100% - 70px);
+}
+
+.side h4+ul ul {
+    display: block;
+    padding: 0;
+}
+
+.side h4+ul ul li:last-of-type {
+    height: calc(100% - 35px);
+    width: calc(100% - 75px);
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    line-height: 25px;
+}
+
+.side blockquote+ul ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side h4+ul > li {
+    padding: 5px;
+    width: 100%;
+}
+
+.side h4+ul ul li {
+    padding-left: 5px;
+    color: grey;
+}
+
+
+.side h4+ul > li:last-of-type li a[href^="#PL"] {
+    margin-top: 15px;
+}
+
+.side h4+ul > li a {
+    display: block;
+    text-align: center;
+    margin: 0;
+    
+}
+
+/* LB Players */
+
+.side h4+ul li a[href^="#PL"] {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #D5D5D5;
+    background-size: auto 90px;
+}
+
+.side h4+ul li a[href^="#PL"] {
+    display: block;
+    float: left;
+}
+
+.side .md  a[href$="03"] { background-position: -103px 0; }
+.side .md  a[href$="04"] { background-position: -187px 0; }
+.side .md  a[href$="05"] { background-position: -284px 0; }
+.side .md  a[href$="06"] { background-position: -368px 0; }
+.side .md  a[href$="11"] { background-position: -461px 0; }
+.side .md  a[href$="12"] { background-position: -550px 0; }
+.side .md  a[href$="13"] { background-position: -641px 0; }
+.side .md  a[href$="14"] { background-position: -732px 0; }
+.side .md  a[href$="15"] { background-position: -820px 0; }
+.side .md  a[href$="16"] { background-position: -911px 0; }
+.side .md  a[href$="17"] { background-position: -1000px 0; }
+.side .md  a[href$="18"] { background-position: -1085px 0; }
+.side .md  a[href$="23"] { background-position: -1180px 0; }
+.side .md  a[href$="24"] { background-position: -1269px 0; }
+.side .md  a[href$="25"] { background-position: -1357px 0; }
+.side .md  a[href$="28"] { background-position: -1445px 0; }
+.side .md  a[href$="30"] { background-position: -1542px 0; }
+.side .md  a[href$="33"] { background-position: -1631px 0; }
+.side .md  a[href$="35"] { background-position: -1723px 0; }
+.side .md  a[href$="43"] { background-position: -1809px 0; }
+.side .md  a[href$="45"] { background-position: -1899px 0; }
+.side .md  a[href$="46"] { background-position: -1989px 0; }
+.side .md  a[href$="47"] { background-position: -2082px 0; }
+.side .md  a[href$="90"] { background-position: -2170px 0; }
+.side .md  a[href$="91"] { background-position: -2262px 0; }
+.side .md  a[href$="37"] { background-position: -2350px 0; }
+.side .md  a[href$="34"] { background-position: -2440px 0; }
+.side .md  a[href$="48"] { background-position: -2530px 0; }
+.side .md  a[href$="39"] { background-position: -2620px 0; }
+.side .md  a[href$="63"] { background-position: -2710px 0; }
+.side .md  a[href$="44"] { background-position: -2800px 0; }
+.side .md  a[href$="42"] { background-position: -2890px 0; }
+.side .md  a[href$="41"] { background-position: -2975px 0; }
+
+/* Sidebar Menu Icons */
+
+.side .subscribe-button a:after, .sidebox.submit.submit-link .morelink:after, .sidecontentbox a.helplink:after, .side a[title="rules"]:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5;
+    height: 30px;
+    width: 30px;
+    background: url(%%i%%);
+    margin-top: 3px;
+    right: 6px;
+    opacity: .4;
+    transition: opacity .3s;
+}
+
+.side .titlebox .tagline .flairselectbtn:hover:after {
+    background-image: url(%%f%%);
+    opacity: 1;
+}
+
+.side .subscribe-button a.remove:after { top: 3px; background-position: -30px 0;}
+.side .subscribe-button a.remove:hover:after { top: 3px; background-position: -30px -30px;}
+.side .subscribe-button a:after { top: 3px; background-position: 0 0;}
+.side .subscribe-button a:hover:after { top: 3px; background-position: 0 -30px;}
+.sidebox.submit.submit-link .morelink:after { top: 0px; background-position: -60px 0; }
+.sidebox.submit.submit-link .morelink:hover:after { top: 0px; background-position: -60px -30px; }
+.sidecontentbox a.helplink:after { top: 0px; background-position: -90px 0; }
+.sidecontentbox a.helplink:hover:after { top: 0px; background-position: -90px -30px; }
+.side a[title="rules"]:after { top: 0px; background-position: -120px 0; }
+.side a[title="rules"]:hover:after { top: 0px; background-position: -120px -30px; }
+
+.side .subscribe-button a:hover:after, .sidebox.submit.submit-link .morelink:hover:after, .sidecontentbox a.helplink:hover:after, .side a[title="rules"]:hover:after, .side .titlebox .tagline .flairselectbtn:hover:after { background-color: transparent!important; opacity: 1; transition: opacity .3s;}
+
+.submit-page .sidecontentbox a.helplink { top: 324px; }
+.submit-page .side a[title="rules"] { top: 360px; }
+.submit-page .side { margin-top: 235px; }
+.submit-page .side .tagline { top: 396px;}
+
+.side .tagline {
+    display: block;
+    position: absolute;
+    top: 432px;
+    margin: 0;
+    right: 10px;
+    background: red;
+    width: 320px;
+    height: 39px;
+}
+
+.titlebox .tagline a.flairselectbtn {
+    display: block;
+    height: 39px;
+    right: 10px;
+    font-size: 0!important;
+}
+
+.titlebox .tagline a.flairselectbtn:before {
+    content: "switch flair";
+    font: normal 12px/36px Arial;
+    font-weight: bold;
+    transition: color 300ms ease;
+    color: #a9a9a9;
+}
+
+div.tagline > span.flair {
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    pointer-events: none;
+}
+
+div.tagline > span.flair:before {
+    background-image: url(%%fs%%);
+    opacity: .4;
+    transition: opacity .3s ease;
+}
+
+div.tagline:hover > span.flair:before {
+    background-image: url(%%f%%);
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+/* User flairs
+++++++++++++++ */
+
+/* Logos
+-------- */
+.flair-dso:before { background-position: -330px 0; }
+.flair-dsoa:before { background-position: -30px 0; }
+.flair-dsoat:before { background-position: -60px 0; }
+.flair-dsa:before { background-position: -360px 0; }
+.flair-dsr:before { background-position: -90px 0; }
+.flair-dsw:before { background-position: -120px 0; }
+.flair-m:before { background-position: -150px 0; }
+.flair-ns:before { background-position: -180px 0; }
+.flair-nsa:before { background-position: -210px 0; }
+.flair-ts:before { background-position: -240px 0; }
+.flair-tsr:before { background-position: -270px 0; }
+.flair-tsw:before { background-position: -300px 0; }
+.flair-pvp:before { background-position: -390px 0; }
+.flair-ds:before { background-position: -420px 0; }
+.flair-25a:before { background-position: -450px 0; }
+
+/* People
+--------- */
+.flair-davestrader:before { background-position: 0 -30px; }
+.flair-jeffk:before { background-position: -30px -30px; }
+.flair-jimnill:before { background-position: -60px -30px; }
+.flair-lindyruff:before { background-position: -90px -30px; }
+.flair-razor:before { background-position: -120px -30px; }
+.flair-tomgaglardi:before { background-position: -150px -30px; }
+.flair-youngrazor:before { background-position: -180px -30px; }
+.flair-dime:before { background-position: -210px -30px; }
+.flair-ken:before { background-position: -240px -30px; }
+.flair-monty:before { background-position: -270px -30px; }
+.flair-dorothy:before { background-position: -300px -30px; }
+
+/* Fun
+------ */
+.flair-donut:before { background-position: 0 -60px; }
+.flair-liquor:before { background-position: -30px -60px; }
+.flair-sprinkles:before { background-position: -60px -60px; }
+.flair-vic:before { background-position: -90px -60px; }
+.flair-duck:before { background-position: -120px -60px; }
+.flair-pant:before { background-position: -150px -60px; }
+.flair-igw:before { background-position: -180px -60px; }
+.flair-ee:before { background-position: -240px -60px; }
+.flair-ylw:before { background-position: -210px -60px; }
+.flair-cbrgr:before { background-position: -240px -60px; }
+
+/* Mods
+------- */
+.flair-cwby:before { background-position: -870px 0; }
+
+/* Player Numbers
+----------------- */
+
+.flair-pf03:before, .comment .md a[href$="03"] { background-position: 0 -90px; }
+.flair-pf04:before, .comment .md a[href$="04"] { background-position: -30px -90px; }
+.flair-pf05:before, .comment .md a[href$="05"] { background-position: -60px -90px; }
+.flair-pf06:before, .comment .md a[href$="06"] { background-position: -90px -90px; }
+.flair-pf11:before, .comment .md a[href$="11"] { background-position: -120px -90px; }
+.flair-pf12:before, .comment .md a[href$="12"] { background-position: -150px -90px; }
+.flair-pf13:before, .comment .md a[href$="13"] { background-position: -180px -90px; }
+.flair-pf14:before, .comment .md a[href$="14"] { background-position: -210px -90px; }
+.flair-pf15:before, .comment .md a[href$="15"] { background-position: -240px -90px; }
+.flair-pf16:before, .comment .md a[href$="16"] { background-position: -270px -90px; }
+.flair-pf17:before, .comment .md a[href$="17"] { background-position: -300px -90px; }
+.flair-pf18:before, .comment .md a[href$="18"] { background-position: -330px -90px; }
+.flair-pf23:before, .comment .md a[href$="23"] { background-position: -360px -90px; }
+.flair-pf24:before, .comment .md a[href$="24"] { background-position: -390px -90px; }
+.flair-pf25:before, .comment .md a[href$="25"] { background-position: -420px -90px; }
+.flair-pf28:before, .comment .md a[href$="28"] { background-position: -450px -90px; }
+.flair-pf30:before, .comment .md a[href$="30"] { background-position: -480px -90px; }
+.flair-pf33:before, .comment .md a[href$="33"] { background-position: -510px -90px; }
+.flair-pf35:before, .comment .md a[href$="35"] { background-position: -540px -90px; }
+.flair-pf43:before, .comment .md a[href$="43"] { background-position: -570px -90px; }
+.flair-pf45:before, .comment .md a[href$="45"] { background-position: -600px -90px; }
+.flair-pf46:before, .comment .md a[href$="46"] { background-position: -630px -90px; }
+.flair-pf47:before, .comment .md a[href$="47"] { background-position: -660px -90px; }
+.flair-pf90:before, .comment .md a[href$="90"] { background-position: -690px -90px; }
+.flair-pf91:before, .comment .md a[href$="91"] { background-position: -720px -90px; }
+.flair-pf37:before, .comment .md a[href$="37"] { background-position: -750px -90px; }
+.flair-pf48:before, .comment .md a[href$="48"] { background-position: -780px -90px; }
+.flair-pf34:before, .comment .md a[href$="34"] { background-position: -810px -90px; }
+
+.flair-pn01:before { background-position: 0 -150px; }
+.flair-pn02:before { background-position: -30px -150px; }
+.flair-pn03:before { background-position: -60px -150px; }
+.flair-pn04:before { background-position: -90px -150px; }
+.flair-pn05:before { background-position: -120px -150px; }
+.flair-pn06:before { background-position: -150px -150px; }
+.flair-pn07:before { background-position: -180px -150px; }
+.flair-pn08:before { background-position: -210px -150px; }
+.flair-pn09:before { background-position: -240px -150px; }
+.flair-pn10:before { background-position: -270px -150px; }
+.flair-pn11:before { background-position: -300px -150px; }
+.flair-pn12:before { background-position: -330px -150px; }
+.flair-pn13:before { background-position: -360px -150px; }
+.flair-pn14:before { background-position: -390px -150px; }
+.flair-pn15:before { background-position: -420px -150px; }
+.flair-pn16:before { background-position: -450px -150px; }
+.flair-pn17:before { background-position: -480px -150px; }
+.flair-pn18:before { background-position: -510px -150px; }
+.flair-pn19:before { background-position: -540px -150px; }
+.flair-pn20:before { background-position: -570px -150px; }
+.flair-pn21:before { background-position: -600px -150px; }
+.flair-pn22:before { background-position: -630px -150px; }
+.flair-pn23:before { background-position: -660px -150px; }
+.flair-pn24:before { background-position: -690px -150px; }
+.flair-pn25:before { background-position: -720px -150px; }
+.flair-pn26:before { background-position: -750px -150px; }
+.flair-pn27:before { background-position: -780px -150px; }
+.flair-pn28:before { background-position: -810px -150px; }
+.flair-pn29:before { background-position: -840px -150px; }
+.flair-pn30:before { background-position: -870px -150px; }
+.flair-pn31:before { background-position: 0 -180px; }
+.flair-pn32:before { background-position: -30px -180px; }
+.flair-pn33:before { background-position: -60px -180px; }
+.flair-pn34:before { background-position: -90px -180px; }
+.flair-pn35:before { background-position: -120px -180px; }
+.flair-pn36:before { background-position: -150px -180px; }
+.flair-pn37:before { background-position: -180px -180px; }
+.flair-pn38:before { background-position: -210px -180px; }
+.flair-pn39:before { background-position: -240px -180px; }
+.flair-pn40:before { background-position: -270px -180px; }
+.flair-pn41:before { background-position: -300px -180px; }
+.flair-pn42:before { background-position: -330px -180px; }
+.flair-pn43:before { background-position: -360px -180px; }
+.flair-pn44:before { background-position: -390px -180px; }
+.flair-pn45:before { background-position: -420px -180px; }
+.flair-pn46:before { background-position: -450px -180px; }
+.flair-pn47:before { background-position: -480px -180px; }
+.flair-pn48:before { background-position: -510px -180px; }
+.flair-pn49:before { background-position: -540px -180px; }
+.flair-pn50:before { background-position: -570px -180px; }
+.flair-pn51:before { background-position: -600px -180px; }
+.flair-pn52:before { background-position: -630px -180px; }
+.flair-pn53:before { background-position: -660px -180px; }
+.flair-pn54:before { background-position: -690px -180px; }
+.flair-pn55:before { background-position: -720px -180px; }
+.flair-pn56:before { background-position: -750px -180px; }
+.flair-pn57:before { background-position: -780px -180px; }
+.flair-pn58:before { background-position: -810px -180px; }
+.flair-pn59:before { background-position: -840px -180px; }
+.flair-pn60:before { background-position: -870px -180px; }
+.flair-pn61:before { background-position: 0 -210px; }
+.flair-pn62:before { background-position: -30px -210px; }
+.flair-pn63:before { background-position: -60px -210px; }
+.flair-pn64:before { background-position: -90px -210px; }
+.flair-pn65:before { background-position: -120px -210px; }
+.flair-pn66:before { background-position: -150px -210px; }
+.flair-pn67:before { background-position: -180px -210px; }
+.flair-pn68:before { background-position: -210px -210px; }
+.flair-pn69:before { background-position: -240px -210px; }
+.flair-pn70:before { background-position: -270px -210px; }
+.flair-pn71:before { background-position: -300px -210px; }
+.flair-pn72:before { background-position: -330px -210px; }
+.flair-pn73:before { background-position: -360px -210px; }
+.flair-pn74:before { background-position: -390px -210px; }
+.flair-pn75:before { background-position: -420px -210px; }
+.flair-pn76:before { background-position: -450px -210px; }
+.flair-pn77:before { background-position: -480px -210px; }
+.flair-pn78:before { background-position: -510px -210px; }
+.flair-pn79:before { background-position: -540px -210px; }
+.flair-pn80:before { background-position: -570px -210px; }
+.flair-pn81:before { background-position: -600px -210px; }
+.flair-pn82:before { background-position: -630px -210px; }
+.flair-pn83:before { background-position: -660px -210px; }
+.flair-pn84:before { background-position: -690px -210px; }
+.flair-pn85:before { background-position: -720px -210px; }
+.flair-pn86:before { background-position: -750px -210px; }
+.flair-pn87:before { background-position: -780px -210px; }
+.flair-pn88:before { background-position: -810px -210px; }
+.flair-pn89:before { background-position: -840px -210px; }
+.flair-pn90:before { background-position: -870px -210px; }
+.flair-pn91:before { background-position: 0 -240px; }
+.flair-pn92:before { background-position: -30px -240px; }
+.flair-pn93:before { background-position: -60px -240px; }
+.flair-pn94:before { background-position: -90px -240px; }
+.flair-pn95:before { background-position: -120px -240px; }
+.flair-pn96:before { background-position: -150px -240px; }
+.flair-pn97:before { background-position: -180px -240px; }
+.flair-pn98:before { background-position: -210px -240px; }
+.flair-pn99:before { background-position: -240px -240px; }
+
+
+*[class^="flair flair-pf"]:before, .comment .md a[href*="#"] {
+    background-position-y: -120px;
+}
+
+/* Past Player Numbers
+----------------- */
+
+.flair-pp10:before { background-position: -270px -240px; }
+.flair-pp56:before { background-position: -300px -240px; }
+
+/* Banners
+---------- */
+
+.flair-ret19:before { background-position: -780px -60px; }
+.flair-ret8:before { background-position: -810px -60px; }
+.flair-ret7:before { background-position: -840px -60px; }
+.flair-ret9:before { background-position: -870px -60px; }
+.flair-ret26:before { background-position: -900px -60px; }
+
+/* Game Threads
+--------------- */
+
+.comments-page .linkflair-game .usertext .md,
+.comments-page .linkflair-postgame .usertext .md {
+    margin-bottom: 0;
+    overflow-x: auto!important;
+    margin: 0 auto;
+    border: none;
+}
+
+.linkflair-game .md ul,
+.linkflair-postgame .md ul {
+    list-style: none!important;
+    margin: 0;
+    padding: 0;
+}
+
+.linkflair-game .md hr+ul:first-of-type *,
+.linkflair-postgame .md hr+ul:first-of-type * {
+    font-family: "Lato", arial, sans-serif;
+}
+
+/* Game Bar */
+.linkflair-game .md hr+ul:first-of-type,
+.linkflair-postgame .md hr+ul:first-of-type {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid silver;
+    padding-top: 5px;
+}
+
+.linkflair-game .md hr+ul:first-of-type li,
+.linkflair-postgame .md hr+ul:first-of-type li {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    top: 0;
+    padding: 10px;
+}
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(1), .linkflair-game .md hr+ul:first-of-type li:nth-of-type(5),
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(1), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(7) {
+    display: block;
+    width: calc(100% - 25% / 2);
+    pointer-events: none;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(1), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(7) {
+    width: calc(100% - 15% / 2);
+}
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(1) a, .linkflair-game .md hr+ul:first-of-type li:nth-of-type(5) a,
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(1) a, .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(7) a {
+    display: block;
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #006a4e!important;
+    line-height: 30px;
+}
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(1) a:nth-of-type(2), .linkflair-game .md hr+ul:first-of-type li:nth-of-type(5) a:nth-of-type(2), .linkflair-game .md hr+ul:first-of-type li:nth-of-type(3) a:nth-of-type(2),
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(1) a:nth-of-type(2), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(7) a:nth-of-type(2), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(4) a:nth-of-type(2) {
+    color: #a9a9a9!important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(1) a,
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(1) a {
+    text-align: right;
+}
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(2), .linkflair-game .md hr+ul:first-of-type li:nth-of-type(4),
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(2), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(6) {
+    padding: 0;
+}
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(2) a[href^="/r/"], .linkflair-game .md hr+ul:first-of-type li:nth-of-type(4) a[href^="/r/"],
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(2) a[href^="/r/"], .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(6) a[href^="/r/"] {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(%%teams%%);
+    background-repeat: no-repeat;
+    background-size: auto 60px;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3), .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) {
+    display: block;
+    width: 15%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3) a, .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) a {
+    color: #a5a6a7!important;
+    pointer-events: none;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3) a[title*="W"], .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) a[title*="W"] {
+    color: #1d1e1f!important;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3) a[title^="D"], .linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) a[title^="D"] {
+    color: #006a4e!important;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3) a[title*="W"]:after {
+    content: "";
+    display: inline-block;
+    display: -webkit-inline-box;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #1d1e1f;
+    top: -6px;
+    left: 12px;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) a[title*="W"]:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #1d1e1f;
+    top: -6px;
+    right: calc(15% - -24px);
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(3) a[title^="D"]:after { border-right: 5px solid #006a4e; }
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(5) a[title^="D"]:after { border-left: 5px solid #006a4e; }
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(3),
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(4) {
+    display: block;
+    width: 25%;
+    text-align: center;
+}
+
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(4) { width: 15%; }
+
+.linkflair-game .md hr+ul:first-of-type li:nth-of-type(3) a,
+.linkflair-postgame .md hr+ul:first-of-type li:nth-of-type(4) a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #cbccce!important;
+    line-height: 40px;
+    pointer-events: none;
+}
+
+/* Info Bar */
+
+.linkflair-game .md hr+ul:nth-of-type(2),
+.linkflair-postgame .md hr+ul:nth-of-type(2) {
+    margin-top: 10px;
+    border-top: 1px solid #c0c0c0;
+    background: #F4F4F4;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li a,
+.linkflair-postgame .md hr+ul:nth-of-type(2) li a {
+    display: inline-block;
+	line-height: 30px;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="I"],
+.linkflair-postgame .md hr+ul:nth-of-type(2) li a[href$="I"] {
+    width: 30px;
+    height: 30px;
+    background: url(%%i%%);
+    text-indent: -9999px;
+    pointer-events: none;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="LI"],
+.linkflair-postgame .md hr+ul:nth-of-type(2) li a[href$="LI"] { background-position: -180px 0px ; }
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="BI"] { background-position: -210px 0px ; }
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="SI"] { background-position: -240px 0px ; }
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="RI"] { background-position: -270px 0px ; }
+.linkflair-game .md hr+ul:nth-of-type(2) li a[href$="TI"] { background-position: -300px 0px ; }
+
+.linkflair-game .md hr+ul:nth-of-type(2) li:last-of-type a em, .linkflair-game .md hr+ul:nth-of-type(3) em,
+.linkflair-postgame .md hr+ul:nth-of-type(2) li:last-of-type a em, .linkflair-postgame .md hr+ul:nth-of-type(3) em {
+    font-style: normal;
+    width: 76px;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li:last-of-type a:first-of-type {
+    width: 30px;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li:last-of-type a {
+    color: grey;
+    pointer-events: none;
+    text-align: center;
+}
+
+/* Preview Box */
+
+.linkflair-game .md hr+ul:nth-of-type(3),
+.linkflair-postgame .md hr+ul:nth-of-type(3) {
+    padding: 10px 14px 0 14px;
+    border: 1px solid #EEE;
+    border-top: 0;
+    border-bottom: 0;
+    font-weight: bold;
+    color: grey;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(3) li:first-child, .linkflair-game .md hr+ul:nth-of-type(5) li:first-of-type,
+.linkflair-postgame .md hr+ul:nth-of-type(3) li:first-child {
+    padding-bottom: 8px!important;
+    border-bottom: 1px solid #EEE!important;
+    clear: both;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(3) em,
+.linkflair-postgame .md hr+ul:nth-of-type(3) em {
+    display: inline-block;
+    width: 107px;
+}
+
+.linkflair-game .md > p,
+.linkflair-postgame .md > p {
+    padding: 5px 14px;
+    width: inherit;
+    min-width: 656px;
+    border: 1px solid #EEE;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0!important;
+    overflow-wrap: normal;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(3) li:first-child a,
+.linkflair-postgame .md hr+ul:nth-of-type(3) li:first-child a {
+    margin-right: 10px;
+}
+
+/* Lines */
+
+.linkflair-game .md hr+hr+hr+ul {
+    text-align: center;
+    width: 100%;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li:first-of-type {
+    display: none;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li:nth-of-type(2), .linkflair-game .md hr+hr+hr+ul > li:nth-of-type(3), .linkflair-game .md hr+hr+hr+ul > li:nth-of-type(4){
+    display: inline-block;
+    float: left;
+    margin: 2px;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li > ul li {
+    border-bottom: 1px solid #D8DBDD;
+    pointer-events: none;
+}
+
+.linkflair-game .md hr+hr+hr+ul li a {
+    display: inline-block;
+    margin-right: -25px;
+    vertical-align: bottom;
+}
+
+.linkflair-game .md hr+hr+hr+ul a:first-of-type {
+    margin-left: -25px;
+}
+
+.linkflair-game .md hr+hr+hr+ul li a[href^="#PL"] {
+    width: 135px;
+    height: 135px;
+    background-image: url(%%players%%);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li:nth-of-type(2) {
+    width: 355px;
+    margin-left: calc(50% - 373.5px)!important;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li:nth-of-type(3) {
+    width: 245px;
+}
+
+.linkflair-game .md hr+hr+hr+ul > li:nth-of-type(4) {
+    width: 135px;
+}
+
+.linkflair-game .md hr+hr+hr+ul+hr+hr+ul > li:first-child {
+    padding-top: 30px;
+}
+
+.linkflair-game .md hr+hr+hr+ul li a.expando-button {
+    margin: 0!important;
+    margin-left: 30px!important;
+}
+
+/* Thread Notes */
+
+.linkflair-game .md hr+ul:nth-of-type(5) {
+    padding: 0 14px;
+    border: 1px solid #EEE;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(5) li:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(5) li {
+    padding: 2px;
+}
+
+/* Go Stars! */
+
+.linkflair-game .md hr+ul:nth-of-type(6),
+.linkflair-postgame .md hr+ul:nth-of-type(4) {
+    background: #EEE;
+    text-align: center;
+    color: #006a4e;
+    font-weight: bold;
+}
+
+/* ...........................................................
+
+#header {
+    background-image: url(%%hm%%);
+}
+
+.............................................................. */
+
+.side a[href$="SP"] {
+	content: "";
+	height: 200px;
+	width: 1103px;
+	display: block;
+    position: absolute;
+    top: 0px;
+    left: 246px;
+    pointer-events: none;
+    background: url(%%sp%%);
+}
+
+.side a[href*="#18SP"] { background-position: 0 0; }
+
+/* ----------Animated Confetti Header---------- */
+
+.side .md a[href="/sprinkles"] {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    top: 25px;
+    right: 0;
+    background-image: url(%%spr1%%), url(%%spr2%%), url(%%spr3%%);
+    background-size: 250px 250px, 500px 500px, 125px 125px, cover, cover;
+    background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
+    background-repeat: repeat, repeat, repeat, no-repeat, no-repeat;
+    -webkit-animation: sprinkles 15s linear;
+    -moz-animation: sprinkles 15s linear;
+    -ms-animation: sprinkles 15s linear;
+    animation: sprinkles 15s linear;
+    animation-iteration-count: infinite;
+    transition: all 500ms;
+    pointer-events: none;
+}
+
+@-webkit-keyframes sprinkles {
+   0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
+    }
+  100% {
+        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
+  }
+}
+
+@-moz-keyframes sprinkles {
+    0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
+    }
+    100% {
+        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
+    }
+}
+
+@-ms-keyframes sprinkles {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
+    }
+    100% {
+        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
+  }
+}
+
+@keyframes sprinkles {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
+    }
+    100% {
+        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
+    }
+}
+
+/* */
+@media all and (max-width: 1177px) { .side a[href*="#SCH"], .side a[href*="#SC"] {display:none} }
+@media all and (max-width: 1050px) { .side .titlebox a[href*="https://en.wikipedia.org/wiki/"], .side .titlebox a[href*="https://en.wikipedia.org/wiki/"]:after {display:none} }
+
+/* nightmode */
+
+.res-nightmode .flair {
+    border: none;
+}
+
+.res-nightmode .link, .res-nightmode .side .md h5+blockquote ul li, .res-nightmode .side .titlebox, .res-nightmode .icon-menu a, .res-nightmode .side .subscribe-button a, .res-nightmode .sidebox.submit.submit-link .morelink a, .res-nightmode .side .morelink, .res-nightmode .sidecontentbox a.helplink, .res-nightmode .titlebox .tagline a.flairselectbtn, .res-nightmode .side a[title="rules"], .res-nightmode #header-bottom-left, .res-nightmode .side .md ul, .res-nightmode .side .redditname a, .res-nightmode .sidecontentbox, .res-nightmode .side .content, .res-nightmode body.comments-page>.content, .res-nightmode .side .usertext-body .md table tbody tr td {
+    background-color: #191919!important;
+}
+
+.res-nightmode .side .md h5+blockquote ul li, .res-nightmode .side .usertext-body .md h5, .res-nightmode .expando-button {
+    border-color: #262626;
+}
+
+.res-nightmode .side .usertext-body .md h4+h4, .res-nightmode .side .usertext-body .md h4+h4+ul+h4, .res-nightmode .submit-page .formtabs-content {
+    background-color: #262626;
+}
+
+.res-nightmode .side h4+ul li a[href^="#PL"] {
+    background-color: #505050;
+}
+
+.res-nightmode .side .md h5+blockquote ul li a {
+    color: #DDD;
+}
+
+.res-nightmode .side .md h5+ul li a {
+    background-color: #3A3A3A;
+    box-shadow: inset 0px 0px 10px -4px #000000;
+}
+
+.res-nightmode #search input[type=text], .res-nightmode body:not(.search-page) #search {
+    border-color: #1F1F1F;
+}
+
+.res-nightmode body:not(.search-page) #search {
+    background-color: #383838;
+}
+
+.res-nightmode div.tagline>span.flair:before {
+    opacity: 1;
+}
+
+.res-nightmode .comment .entry .tagline {
+    background: #222;
+    border-color: #333;
+}
+
+.res-nightmode .comment .entry:hover .tagline {
+    background-color: #3e3e3e;
+}
+
+.res-nightmode .comment .entry .flat-list, .res-nightmode .comment .entry .md {
+    background-color: #373737;
+    border-color: #333333;
+}
+
+.res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0!important;
+}
+
+.res-nightmode .comment .child .comment:before, .res-nightmode .side .md h5+blockquote ul:hover [title*="Loss"]:after {
+    background-color: #373737;
+}
+
+.flairsample-left {
+    text-align: left!important;
+}
+
+.link.last-clicked {
+    overflow: inherit;
+}
+
+
+/* GDT special edition
+
+.linkflair-game .md hr+ul:nth-of-type(2) {
+    background: #ffc107;
+    border-color: #ff9800;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(2) li, .linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(4) li:first-of-type {
+    color: #bd9620!important;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(3) li:first-child, .linkflair-game .md hr+ul:nth-of-type(4), .linkflair-game .md>p, .linkflair-game .md hr+ul:nth-of-type(4) li:first-of-type {
+    border-color: #ffc107!important;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(5) {
+    background: #ffc107;
+    color: white;
+}
+
+.linkflair-game .md a, .linkflair-game .md hr+ul:nth-of-type(2) li:last-of-type a {
+    color: #9c27b0!important;
+}
+
+.linkflair-game .md hr+ul:nth-of-type(3) li {
+    color: #9aea3c!important;
+}
