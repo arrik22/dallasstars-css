@@ -2092,6 +2092,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .md  a[href$="44"] { background-position-x: calc(-135px * 31); }
 .md  a[href$="42"] { background-position-x: calc(-135px * 32); }
 .md  a[href$="02"] { background-position-x: calc(-135px * 33); }
+.md  a[href$="38"] { background-position-x: calc(-135px * 34); }
 
 /* GT Teams
 ----------- */
@@ -2398,6 +2399,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md  a[href$="44"] { background-position: -2800px 0; }
 .side .md  a[href$="42"] { background-position: -2890px 0; }
 .side .md  a[href$="02"] { background-position: -2975px 0; }
+.side .md  a[href$="38"] { background-position: -3060px 0; }
 
 /* Sidebar Menu Icons */
 
