@@ -2532,6 +2532,7 @@ div.tagline:hover > span.flair:before {
 .flair-ee:before { background-position: -240px -60px; }
 .flair-ylw:before { background-position: -210px -60px; }
 .flair-cbrgr:before { background-position: -240px -60px; }
+.flair-sponge:before { background-position: -270px -60px; }
 
 /* Mods
 ------- */
