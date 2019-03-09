@@ -416,7 +416,7 @@ body:not(.search-page) #search {
     content: "";
     display: block;
 	width: 320px;
-	height: 353px;
+	height: 320px;
 	margin-top: 5px;
 	background: url(%%sidebarimg%%);
 	border: 7px solid white; /* change back to 5px */
