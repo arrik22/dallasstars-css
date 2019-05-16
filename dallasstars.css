@@ -1025,7 +1025,7 @@ body.comments-page > .content { margin-top: 105px; }
     display: block;
     position: absolute;
     top: 6px;
-    margin-left: 50%; /* calc(50% - 12px); to straighten */
+    margin-left: 50%;
     width: 24px;
     height: 24px;
 	background-image:url(%%teamsx24%%);
@@ -1064,6 +1064,14 @@ body.comments-page > .content { margin-top: 105px; }
 .side .md blockquote a[href*="/r/goldenknights"] {background-position: -672px 0;}
 .side .md blockquote a[href*="/r/winnipegjets"] {background-position: -696px 0;}
 .side .md blockquote a[href*="/r/caps"] {background-position: -720px 0;}
+
+/* Off-season */
+
+.side .md h5+blockquote ul { display: none!important; }
+
+body > .content {
+    margin-top: 40px;
+}
 
 /* Posts */
 .linkinfo {
@@ -2531,7 +2539,6 @@ div.tagline:hover > span.flair:before {
 .flair-duck:before { background-position: -120px -60px; }
 .flair-pant:before { background-position: -150px -60px; }
 .flair-igw:before { background-position: -180px -60px; }
-.flair-ee:before { background-position: -240px -60px; }
 .flair-ylw:before { background-position: -210px -60px; }
 .flair-cbrgr:before { background-position: -240px -60px; }
 .flair-sponge:before { background-position: -270px -60px; }
@@ -3189,32 +3196,3 @@ div.tagline:hover > span.flair:before {
 .link.last-clicked {
     overflow: inherit;
 }
-
-
-/* GDT special edition
-
-.linkflair-game .md hr+ul:nth-of-type(2) {
-    background: #ffc107;
-    border-color: #ff9800;
-}
-
-.linkflair-game .md hr+ul:nth-of-type(2) li, .linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(4) li:first-of-type {
-    color: #bd9620!important;
-}
-
-.linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(3), .linkflair-game .md hr+ul:nth-of-type(3) li:first-child, .linkflair-game .md hr+ul:nth-of-type(4), .linkflair-game .md>p, .linkflair-game .md hr+ul:nth-of-type(4) li:first-of-type {
-    border-color: #ffc107!important;
-}
-
-.linkflair-game .md hr+ul:nth-of-type(5) {
-    background: #ffc107;
-    color: white;
-}
-
-.linkflair-game .md a, .linkflair-game .md hr+ul:nth-of-type(2) li:last-of-type a {
-    color: #9c27b0!important;
-}
-
-.linkflair-game .md hr+ul:nth-of-type(3) li {
-    color: #9aea3c!important;
-} */
