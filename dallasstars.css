@@ -1065,11 +1065,13 @@ body.comments-page > .content { margin-top: 105px; }
 .side .md blockquote a[href*="/r/winnipegjets"] {background-position: -696px 0;}
 .side .md blockquote a[href*="/r/caps"] {background-position: -720px 0;}
 
+at the very bottom
+
 /* Off-season */
 
-.side .md h5+blockquote ul { display: none!important; }
+.side .md h5+blockquote { display: none!important; }
 
-body > .content {
+body > .content, body.comments-page > .content {
     margin-top: 40px;
 }
 
