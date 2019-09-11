@@ -1067,13 +1067,13 @@ body.comments-page > .content { margin-top: 105px; }
 
 at the very bottom
 
-/* Off-season */
+/* Off-season (hide during season 
 
 .side .md h5+blockquote { display: none!important; }
 
 body > .content, body.comments-page > .content {
     margin-top: 40px;
-}
+} */
 
 /* Posts */
 .linkinfo {
