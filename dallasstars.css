@@ -2509,10 +2509,9 @@ div.tagline:hover > span.flair:before {
 .flair-jimnill:before { background-position: -60px -30px; }
 .flair-razor:before { background-position: -90px -30px; }
 .flair-tomgaglardi:before { background-position: -120px -30px; }
-.flair-youngrazor:before { background-position: -150px -30px; }
-.flair-monty:before { background-position: -180px -30px; }
-.flair-dorothy:before { background-position: -210px -30px; }
-.flair-grubes:before { background-position: -240px -30px; }
+.flair-monty:before { background-position: -150px -30px; }
+.flair-dorothy:before { background-position: -180px -30px; }
+.flair-grubes:before { background-position: -210px -30px; }
 
 /* Fun
 ------ */
