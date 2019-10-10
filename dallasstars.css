@@ -934,7 +934,7 @@ body.comments-page > .content { margin-top: 105px; }
     letter-spacing: 1px;
 }
 
-/* unhide after 5 games have been played ---> */
+/* unhide after 5 games have been played ---> 
 
 .side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#S"] {
     font-weight: lighter;
@@ -997,7 +997,7 @@ body.comments-page > .content { margin-top: 105px; }
 .side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#I"] {
     letter-spacing: 1px;
     color: white;
-}
+} */
 
 /* hide after season ends ---> */
 
@@ -2471,12 +2471,6 @@ div.tagline > span.flair {
     pointer-events: none;
 }
 
-div.tagline > span.flair:before {
-    background-image: url(%%fs%%);
-    opacity: .4;
-    transition: opacity .3s ease;
-}
-
 div.tagline:hover > span.flair:before {
     background-image: url(%%f%%);
     opacity: 1;
@@ -2488,19 +2482,20 @@ div.tagline:hover > span.flair:before {
 
 /* Logos
 -------- */
-.flair-dsoa:before { background-position: -30px 0; }
-.flair-dsoat:before { background-position: -60px 0; }
-.flair-dsa:before { background-position: -360px 0; }
-.flair-dsr:before { background-position: -90px 0; }
-.flair-dsw:before { background-position: -120px 0; }
-.flair-m:before { background-position: -150px 0; }
-.flair-ns:before { background-position: -180px 0; }
-.flair-nsa:before { background-position: -210px 0; }
-.flair-ts:before { background-position: -240px 0; }
-.flair-tsr:before { background-position: -270px 0; }
-.flair-tsw:before { background-position: -300px 0; }
-.flair-pvp:before { background-position: -390px 0; }
-.flair-25a:before { background-position: -420px 0; }
+.flair-whitetexas:before { background-position: -30px 0; }
+.flair-greentexas:before { background-position: -60px 0; }
+.flair-circle:before { background-position: -360px 0; }
+.flair-dallas:before { background-position: -90px 0; }
+.flair-mooterus:before { background-position: -120px 0; }
+.flair-northstars:before { background-position: -150px 0; }
+.flair-circlens:before { background-position: -180px 0; }
+.flair-texasstars:before { background-position: -210px 0; }
+.flair-logoflag:before { background-position: -240px 0; }
+.flair-texas:before { background-position: -270px 0; }
+.flair-starsold:before { background-position: -300px 0; }
+.flair-texasd:before { background-position: -390px 0; }
+.flair-pevs:before { background-position: -420px 0; }
+.flair-texas25:before { background-position: -420px 0; }
 
 /* People
 --------- */
@@ -3039,63 +3034,6 @@ div.tagline:hover > span.flair:before {
 
 .side a[href*="#18SP"] { background-position: 0 0; }
 
-/* ----------Animated Confetti Header---------- */
-
-.side .md a[href="/sprinkles"] {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 175px;
-    top: 25px;
-    right: 0;
-    background-image: url(%%spr1%%), url(%%spr2%%), url(%%spr3%%);
-    background-size: 250px 250px, 500px 500px, 125px 125px, cover, cover;
-    background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
-    background-repeat: repeat, repeat, repeat, no-repeat, no-repeat;
-    -webkit-animation: sprinkles 15s linear;
-    -moz-animation: sprinkles 15s linear;
-    -ms-animation: sprinkles 15s linear;
-    animation: sprinkles 15s linear;
-    animation-iteration-count: infinite;
-    transition: all 500ms;
-    pointer-events: none;
-}
-
-@-webkit-keyframes sprinkles {
-   0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
-    }
-  100% {
-        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
-  }
-}
-
-@-moz-keyframes sprinkles {
-    0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
-    }
-    100% {
-        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
-    }
-}
-
-@-ms-keyframes sprinkles {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
-    }
-    100% {
-        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
-  }
-}
-
-@keyframes sprinkles {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px, center, center -180px;
-    }
-    100% {
-        background-position: 500px 1000px, 1000px 1000px, 375px 500px, center, center -180px;
-    }
-}
 
 /* */
 @media all and (max-width: 1177px) { .side a[href*="#SCH"], .side a[href*="#SC"] {display:none} }
