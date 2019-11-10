@@ -1,6 +1,12 @@
 /* General
 ---------- */
-*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;
+
+/* UNCOMMENT FOR ALL CAPS */
+   /* text-transform: UPPERCASE !important; */
+    /* uncomment for no caps */
+   /* text-transform: lowercase !important; */
+}
 
 body > .content {
     margin: 0 340px 0 10px;
@@ -934,7 +940,7 @@ body.comments-page > .content { margin-top: 105px; }
     letter-spacing: 1px;
 }
 
-/* unhide after 5 games have been played ---> 
+/* unhide after 5 games have been played ---> */
 
 .side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#S"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#S"] {
     font-weight: lighter;
@@ -997,7 +1003,7 @@ body.comments-page > .content { margin-top: 105px; }
 .side .md h5+blockquote ul:hover li:nth-of-type(1) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(2) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(3) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(4) [href*="#I"], .side .md h5+blockquote ul:hover li:nth-of-type(5) [href*="#I"] {
     letter-spacing: 1px;
     color: white;
-} */
+}
 
 /* hide after season ends ---> */
 
@@ -2552,7 +2558,7 @@ div.tagline:hover > span.flair:before {
 .flair-pf49:before, .comment .md a[href$="49"] { background-position: -750px -90px; }
 .flair-pf38:before, .comment .md a[href$="38"] { background-position: -780px -90px; }
 .flair-pf39:before, .comment .md a[href$="39"] { background-position: -810px -90px; }
-.flair-pf39:before, .comment .md a[href$="44"] { background-position: -840px -90px; }
+.flair-pf44:before, .comment .md a[href$="44"] { background-position: -840px -90px; }
 
 .flair-pn01:before { background-position: 0 -150px; }
 .flair-pn02:before { background-position: -30px -150px; }
