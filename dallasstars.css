@@ -2397,7 +2397,8 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md  a[href$="17"] { background-position: -2255px 0; }
 .side .md  a[href$="49"] { background-position: -2340px 0; }
 .side .md  a[href$="38"] { background-position: -2425px 0; }
-.side .md  a[href$="49"] { background-position: -2510px 0; }
+.side .md  a[href$="39"] { background-position: -2510px 0; }
+.side .md  a[href$="44"] { background-position: -2595px 0; }
 
 /* Sidebar Menu Icons */
 
@@ -2484,17 +2485,17 @@ div.tagline:hover > span.flair:before {
 -------- */
 .flair-whitetexas:before { background-position: -30px 0; }
 .flair-greentexas:before { background-position: -60px 0; }
-.flair-circle:before { background-position: -360px 0; }
-.flair-dallas:before { background-position: -90px 0; }
-.flair-mooterus:before { background-position: -120px 0; }
-.flair-northstars:before { background-position: -150px 0; }
-.flair-circlens:before { background-position: -180px 0; }
-.flair-texasstars:before { background-position: -210px 0; }
-.flair-logoflag:before { background-position: -240px 0; }
-.flair-texas:before { background-position: -270px 0; }
-.flair-starsold:before { background-position: -300px 0; }
-.flair-texasd:before { background-position: -390px 0; }
-.flair-pevs:before { background-position: -420px 0; }
+.flair-circle:before { background-position: -90px 0; }
+.flair-dallas:before { background-position: -120px 0; }
+.flair-mooterus:before { background-position: -150px 0; }
+.flair-northstars:before { background-position: -180px 0; }
+.flair-circlens:before { background-position: -210px 0; }
+.flair-texasstars:before { background-position: -240px 0; }
+.flair-logoflag:before { background-position: -270px 0; }
+.flair-texas:before { background-position: -300px 0; }
+.flair-starsold:before { background-position: -330px 0; }
+.flair-texasd:before { background-position: -360px 0; }
+.flair-pevs:before { background-position: -390px 0; }
 .flair-texas25:before { background-position: -420px 0; }
 
 /* People
@@ -2551,6 +2552,7 @@ div.tagline:hover > span.flair:before {
 .flair-pf49:before, .comment .md a[href$="49"] { background-position: -750px -90px; }
 .flair-pf38:before, .comment .md a[href$="38"] { background-position: -780px -90px; }
 .flair-pf39:before, .comment .md a[href$="39"] { background-position: -810px -90px; }
+.flair-pf39:before, .comment .md a[href$="44"] { background-position: -840px -90px; }
 
 .flair-pn01:before { background-position: 0 -150px; }
 .flair-pn02:before { background-position: -30px -150px; }
