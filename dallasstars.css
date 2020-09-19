@@ -2564,6 +2564,7 @@ div.tagline:hover > span.flair:before {
 .flair-pf38:before, .comment .md a[href$="38"] { background-position: -780px -90px; }
 .flair-pf39:before, .comment .md a[href$="39"] { background-position: -810px -90px; }
 .flair-pf44:before, .comment .md a[href$="44"] { background-position: -840px -90px; }
+.flair-pf25:before, .comment .md a[href$="25"] { background-position: -870px -90px; }
 
 .flair-pn01:before { background-position: 0 -150px; }
 .flair-pn02:before { background-position: -30px -150px; }
