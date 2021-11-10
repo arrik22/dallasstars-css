@@ -422,7 +422,7 @@ body:not(.search-page) #search {
     content: "";
     display: block;
 	width: 320px;
-	height: 320px;
+	height: 220px;
 	margin-top: 5px;
 	background: url(%%sidebarimg%%);
 	border: 7px solid white; /* change back to 5px */
@@ -2079,33 +2079,32 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .md  a[href$="03"] { background-position-x: calc(-135px * 2); }
 .md  a[href$="04"] { background-position-x: calc(-135px * 3); }
 .md  a[href$="05"] { background-position-x: calc(-135px * 4); }
-.md  a[href$="xx"] { background-position-x: calc(-135px * 5); }
-.md  a[href$="yy"] { background-position-x: calc(-135px * 6); }
-.md  a[href$="11"] { background-position-x: calc(-135px * 7); }
-.md  a[href$="12"] { background-position-x: calc(-135px * 8); }
-.md  a[href$="zz"] { background-position-x: calc(-135px * 9); }
-.md  a[href$="14"] { background-position-x: calc(-135px * 10); }
-.md  a[href$="15"] { background-position-x: calc(-135px * 11); }
-.md  a[href$="16"] { background-position-x: calc(-135px * 12); }
-.md  a[href$="18"] { background-position-x: calc(-135px * 13); }
-.md  a[href$="20"] { background-position-x: calc(-135px * 14); }
-.md  a[href$="21"] { background-position-x: calc(-135px * 15); }
-.md  a[href$="23"] { background-position-x: calc(-135px * 16); }
-.md  a[href$="24"] { background-position-x: calc(-135px * 17); }
-.md  a[href$="25"] { background-position-x: calc(-135px * 18); }
-.md  a[href$="35"] { background-position-x: calc(-135px * 19); }
-.md  a[href$="sj"] { background-position-x: calc(-135px * 20); }
-.md  a[href$="jo"] { background-position-x: calc(-135px * 21); }
-.md  a[href$="30"] { background-position-x: calc(-135px * 22); }
-.md  a[href$="34"] { background-position-x: calc(-135px * 23); }
-.md  a[href$="35"] { background-position-x: calc(-135px * 24); }
-.md  a[href$="40"] { background-position-x: calc(-135px * 25); }
-.md  a[href$="44"] { background-position-x: calc(-135px * 26); }
-.md  a[href$="47"] { background-position-x: calc(-135px * 27); }
-.md  a[href$="64"] { background-position-x: calc(-135px * 28); }
-.md  a[href$="bg"] { background-position-x: calc(-135px * 29); }
-.md  a[href$="70"] { background-position-x: calc(-135px * 30); }
-.md  a[href$="91"] { background-position-x: calc(-135px * 31); }
+.md  a[href$="td"] { background-position-x: calc(-135px * 5); }
+.md  a[href$="11"] { background-position-x: calc(-135px * 6); }
+.md  a[href$="12"] { background-position-x: calc(-135px * 7); }
+.md  a[href$="13"] { background-position-x: calc(-135px * 8); }
+.md  a[href$="14"] { background-position-x: calc(-135px * 9); }
+.md  a[href$="15"] { background-position-x: calc(-135px * 10); }
+.md  a[href$="16"] { background-position-x: calc(-135px * 11); }
+.md  a[href$="18"] { background-position-x: calc(-135px * 12); }
+.md  a[href$="20"] { background-position-x: calc(-135px * 13); }
+.md  a[href$="21"] { background-position-x: calc(-135px * 14); }
+.md  a[href$="23"] { background-position-x: calc(-135px * 15); }
+.md  a[href$="24"] { background-position-x: calc(-135px * 16); }
+.md  a[href$="25"] { background-position-x: calc(-135px * 17); }
+.md  a[href$="sj"] { background-position-x: calc(-135px * 18); }
+.md  a[href$="jo"] { background-position-x: calc(-135px * 19); }
+.md  a[href$="30"] { background-position-x: calc(-135px * 20); }
+.md  a[href$="34"] { background-position-x: calc(-135px * 21); }
+.md  a[href$="35"] { background-position-x: calc(-135px * 22); }
+.md  a[href$="40"] { background-position-x: calc(-135px * 23); }
+.md  a[href$="44"] { background-position-x: calc(-135px * 24); }
+.md  a[href$="47"] { background-position-x: calc(-135px * 25); }
+.md  a[href$="64"] { background-position-x: calc(-135px * 26); }
+.md  a[href$="bg"] { background-position-x: calc(-135px * 27); }
+.md  a[href$="70"] { background-position-x: calc(-135px * 28); }
+.md  a[href$="91"] { background-position-x: calc(-135px * 29); }
+.md  a[href$="55"] { background-position-x: calc(-135px * 30); }
 
 
 /* GT Teams
@@ -2401,14 +2400,15 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md  a[href$="jo"] { background-position: -1723px 0; }
 .side .md  a[href$="30"] { background-position: -1809px 0; }
 .side .md  a[href$="34"] { background-position: -1899px 0; }
-.side .md  a[href$="35"] { background-position: -1989px 0; }
+.side .md  a[href$="35"] { background-position: -1993px 0; }
 .side .md  a[href$="40"] { background-position: -2082px 0; }
 .side .md  a[href$="44"] { background-position: -2170px 0; }
 .side .md  a[href$="47"] { background-position: -2255px 0; }
 .side .md  a[href$="64"] { background-position: -2340px 0; }
 .side .md  a[href$="bg"] { background-position: -2425px 0; }
-.side .md  a[href$="70"] { background-position: -2510px 0; }
-.side .md  a[href$="91"]
+.side .md  a[href$="70"] { background-position: -2532px 0; }
+.side .md  a[href$="91"] { background-position: -2610px 0; }
+.side .md  a[href$="55"] { background-position: -2690px 0; }
 
 /* Sidebar Menu Icons */
 
