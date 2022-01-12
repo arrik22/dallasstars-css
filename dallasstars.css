@@ -422,7 +422,7 @@ body:not(.search-page) #search {
     content: "";
     display: block;
 	width: 320px;
-	height: 220px;
+	height: 320px;
 	margin-top: 5px;
 	background: url(%%sidebarimg%%);
 	border: 7px solid white; /* change back to 5px */
@@ -2151,6 +2151,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
  .md  a[href$="VGK"] {background-position: -1680px 0;}
  .md  a[href$="WIN"] {background-position: -1740px 0;}
  .md  a[href$="WSH"] {background-position: -1800px 0;}
+ .md  a[href$="SEA"] {background-position: -1860px 0;}
  
  /* Table Teams
 ----------- */
@@ -2196,6 +2197,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md table a[href$="/r/goldenknights"], .flair-TEAMVGK:before {background-position: -840px -90px;}
 .side .md table a[href$="/r/winnipegjets"], .flair-TEAMWIN:before {background-position: -870px -90px;}
 .side .md table a[href$="/r/caps"], .flair-TEAMWSH:before {background-position: -900px -90px;}
+.side .md table a[href$="/r/seattlekraken"], .flair-TEAMSEA:before {background-position: -930px -90px;}
 
 /* Icons
 -------- */
@@ -2397,7 +2399,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md  a[href$="24"] { background-position: -1445px 0; }
 .side .md  a[href$="25"] { background-position: -1542px 0; }
 .side .md  a[href$="sj"] { background-position: -1631px 0; }
-.side .md  a[href$="jo"] { background-position: -1723px 0; }
+.side .md  a[href$="29"] { background-position: -1723px 0; }
 .side .md  a[href$="30"] { background-position: -1809px 0; }
 .side .md  a[href$="34"] { background-position: -1899px 0; }
 .side .md  a[href$="35"] { background-position: -1993px 0; }
