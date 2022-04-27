@@ -2094,7 +2094,7 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .md  a[href$="24"] { background-position-x: calc(-135px * 16); }
 .md  a[href$="25"] { background-position-x: calc(-135px * 17); }
 .md  a[href$="sj"] { background-position-x: calc(-135px * 18); }
-.md  a[href$="jo"] { background-position-x: calc(-135px * 19); }
+.md  a[href$="29"] { background-position-x: calc(-135px * 19); }
 .md  a[href$="30"] { background-position-x: calc(-135px * 20); }
 .md  a[href$="34"] { background-position-x: calc(-135px * 21); }
 .md  a[href$="35"] { background-position-x: calc(-135px * 22); }
@@ -2106,6 +2106,10 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .md  a[href$="70"] { background-position-x: calc(-135px * 28); }
 .md  a[href$="91"] { background-position-x: calc(-135px * 29); }
 .md  a[href$="55"] { background-position-x: calc(-135px * 30); }
+.md  a[href$="51"] { background-position-x: calc(-135px * 31); }
+.md  a[href$="92"] { background-position-x: calc(-135px * 32); }
+.md  a[href$="43"] { background-position-x: calc(-135px * 33); }
+.md  a[href$="41"] { background-position-x: calc(-135px * 34); }
 
 
 /* GT Teams
@@ -2412,6 +2416,10 @@ a[href*="#lhtlight"] { top: 35; right: 25px; transition: all 200ms ease; }
 .side .md  a[href$="70"] { background-position: -2532px 0; }
 .side .md  a[href$="91"] { background-position: -2610px 0; }
 .side .md  a[href$="55"] { background-position: -2690px 0; }
+.side .md  a[href$="51"] { background-position: -2770px 0; }
+.side .md  a[href$="92"] { background-position: -2850px 0; }
+.side .md  a[href$="43"] { background-position: -2930px 0; }
+.side .md  a[href$="70"] { background-position: -3010px 0; }
 
 /* Sidebar Menu Icons */
 
